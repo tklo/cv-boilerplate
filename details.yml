@@ -1,54 +1,117 @@
 ---
 # Personal details
-name: Friedrich Nietzsche
+name: Tomasz Michal Klosinski
 address:
-- Humboldtstraße 36
-- 99425 Weimar
-- Prussia
-phone: "+49 03643 545400"
-email: friedrich@thevoid.de
+- "16 Avenue du Jura"
+- "01210 Ferney-Voltaire"
+- "France"
+phone: "+33 755 77 37 37"
+email: tomasz.klosinski@protonmail.ch
 # Insert URLs without http://
-urls:
-- wki.pe/friedrich_nietzsche
-- twitter.com/tinynietzsche
+linkedin: tklosinski
+gpg:
+  key: "E75959B0"
+  url: "http://pgp.mit.edu/pks/lookup?op=get&search=0x0F79558EE75959B0"
 
 # Sections
 
-intro: "I know my fate. One day my name will be associated with the memory of something tremendous --- a crisis without equal on earth, the most profound collision of conscience, a decision that was conjured up against everything that had been believed, demanded, hallowed so far. I am no man, I am dynamite."
+quote:
+  text: "We do not act rightly because we have virtue or excellence, but we rather have those because we have acted rightly.\\
+  We are what we repeatedly do. Excellence, then, is not an act but a habit."
+  author: "Aristotle"
+  book: "Nichomachean Ethics"
 
-skills:
-- Aesthetics, Ethics, Metaphysics, Nihilism
-- Psychology, Ontology, Poetry, Value theory
-- Voluntarism, Tragedy, Fact–value distinction
-- Anti-foundationalism, Philosophy of history
+intro:
+  - "I am B.A. graduate of Computer Science and B.A. graduate of Business Management, both held in English, at University of Lodz,
+    and M.A. graduate of IT (Databases) at Polish-Japanese Academy of Information Technology.
+    I have been working in Linux world for last 4 years and I have been passionate Linux user for over 13 years.
+    My current position is System Engineer in DevOps and Infrastructure teams at CERN Control Center."
+  # - "My current position is System Engineer for DevOps and Infrastructure teams at CERN Control Center."
+
+interests:
+- DevOps, Continuous Delivery
+- Cloud Computing, IT Infrastructure
+- Management, Agile Methodologies
+
+languages:
+- language: Polish
+  proficiency: Native proficiency
+- language: English
+  proficiency: Full professional proficiency
+- language: French
+  proficiency: Limited professional proficiency
 
 experience:
-- years: 1879--1889
-  employer: Freiberufler
-  job: Freier Philisoph
-  city: Sils-Maria
-- years: 1869–-1879
-  employer: Universität Basel
-  job: Professor für klassische Philologie
-  city: Basel
-- years: 1867--1868
-  employer: Preußischen Artillerie
-  job: Kanonier
-  city: Naumburg
+- years: "2015--2016"
+  employer: CERN
+  job: Project Associate
+  city: Geneva
+  description:
+    "At CERN Control Center I have been working in support team of over 2000 (OpenStack) VMs, desktops and servers (60% real-time kernel).
+    Most of the servers that I have been taking care of were Linux machines providing the mission critical software for the operation of LHC and other accelerators.
+    Along with my daily support and troubleshooting tasks, I have been involved in numerous activities in System Administration Modernisation project."
+- years: "2014–-2015"
+  employer: Linux Polska
+  job: Solution Architect
+  city: Warsaw
+  description:
+    "At Linux Polska I have worked on a continuous delivery system for building rpm packages.
+    I have contributed also to the organization of the biggest Open Source event in Poland (which Linux Polska is co-organizing every year in May): Open Source Day."
+- years: "2011--2014"
+  employer: IMPAQ
+  job: Software / System Engineer
+  city: Warsaw
+  description:
+    "My career as a System Engineer at IMPAQ can be split into two periods.
+    For first half year I have been member of a support team of RHEL-based telco applications for international cellular networks.
+    For another 1.5+ year I have worked for Machine-to-Machine, Cloud Computing and Big Data Business Practice (Department)."
+- years: "2010--2011"
+  employer: Outbox
+  job: Junior Consultant
+  city: Warsaw
+  description:
+    "At Outbox I have worked on the development of the CRM system based on Oracle PeopleSoft platform for Telekomunikacja Polska SA."
 
 education:
-- year: 1867
-  subject: Philology
-  institute: Leipzig Universität
-  city: Leipzig
-- year: 1864
-  subject: Abitur
-  institute: Schulpforta
-  city: Naumburg
+- year: "2010--2012"
+  subject: Databases
+  degree: M.A.
+  institute: Polish-Japanese Academy of Information Technology
+  city: Warsaw
+- year: "2008--2011"
+  subject: Business Management
+  degree: B.A.
+  institute: University of Lodz
+  city: Lodz
+- year: "2007--2010"
+  subject: Computer Science
+  degree: B.A.
+  institute: University of Lodz
+  city: Lodz
+
+cerification:
+  - title: Red Hat Certified Engineer
+    license: 140-054-446
+    url: "https://www.redhat.com/wapps/training/certification/verify.html?certNumber=140-054-446&isSearch=False&verify=Verify"
+    dates: "2014--2017"
+  - title: Red Hat Certified System Administrator
+    license: 140-054-446
+    url: "https://www.redhat.com/wapps/training/certification/verify.html?certNumber=140-054-446&isSearch=False&verify=Verify"
+    dates: "2014--2017"
+
+
+skills:
+  - Linux, Bash
+  - Ansible, Python, Vagrant, Chef, Ruby, Jenkins
+  - Elasticsearch, Logstash, Kibana
+  - MySQL, PostgreSQL
+  - Apache HTTPD, nginx, HAProxy
+  - Nagios, Zabbix
 
 # Settings
-mainfont: Hoefler Text
-fontsize: 10pt
+#mainfont: Hoefler Text
+mainfont: Linux Libertine O
+fontsize: 8pt
 lang: English
-geometry: a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm
+geometry: a4paper, left=28mm, right=28mm, top=17mm, bottom=17mm
 ---

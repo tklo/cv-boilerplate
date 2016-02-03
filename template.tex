@@ -6,7 +6,7 @@
 % LAYOUT
 %--------------------------------
 % Margins
-\usepackage{geometry} 
+\usepackage{geometry}
 \geometry{$geometry$}
 
 % Do not indent paragraphs
@@ -14,7 +14,7 @@
 
 % Enable multicolumns
 \usepackage{multicol}
-\setlength{\columnsep}{-3.5cm}
+\setlength{\columnsep}{10pt}
 
 % Uncomment to suppress page numbers
 % \pagenumbering{gobble}
@@ -22,14 +22,12 @@
 % LANGUAGE
 %--------------------------------
 % Set the main language
-$if(lang)$
 \usepackage{polyglossia}
 \setmainlanguage{$lang$}
-$endif$
 
 % TYPOGRAPHY
 %--------------------------------
-\usepackage{fontspec} 
+\usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{xltxtra}
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
@@ -46,13 +44,16 @@ $endif$
 \setlength{\marginparsep}{7pt}
 \reversemarginpar
 
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+
 % HEADINGS
 %--------------------------------
-\usepackage{sectsty} 
-\usepackage[normalem]{ulem} 
-\sectionfont{\rmfamily\mdseries} 
-\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
-\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\sectionfont{\rmfamily\mdseries}
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize}
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
 
 % PDF SETUP
 %--------------------------------
@@ -76,9 +77,8 @@ $endif$
 
 {\LARGE $name$}\\[.2cm]
 
-$if(urls)$
+
 \begin{multicols}{2}
-$endif$
 
 $for(address)$
 $address$\\
@@ -86,60 +86,100 @@ $endfor$
 
 \vspace{-10pt}
 
-$phone$\\
-\href{mailto:$email$}{$email$}\\
+$phone$
 
-
-$if(urls)$
 \columnbreak
 
-$for(urls)$
-\href{http://$urls$}{$urls$}\\
-$endfor$
+\href{mailto:$email$}{$email$}\\
+PGP: \href{$gpg.url$}{$gpg.key$}\\\\
+\href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}
+
+
 \end{multicols}
-$endif$
 
-\vspace{30pt}
+\vspace{-5pt}
 
-$if(intro)$
-$intro$
-$endif$
+\begin{changemargin}{0.5cm}{0.5cm}
+\begin{center}
+\begin{scriptsize}
+\emph{$quote.text$}\\
+—$quote.author$, \emph{$quote.book$}\\
+\end{scriptsize}
+\end{center}
+\end{changemargin}
+
+$for(intro)$
+$intro$\\\\
+$endfor$
+
+\vspace{-20pt}
+
+\begin{multicols}{2}
 
 \subsection*{Areas of Interest}
-$if(skills)$
-\begin{itemize}
-    $for(skills)$
-      \item $skills$
-    $endfor$
-\end{itemize}
-$endif$
+$for(interests)$
+$interests$\\
+$endfor$
 
-% \vfill
+\columnbreak
 
-\vspace{25pt}
+\subsection*{Languages}
+$for(languages)$
+\emph{$languages.language$} ($languages.proficiency$)\\
+$endfor$
+
+\end{multicols}
+
+\vspace{-15pt}
 
 \section*{Previous Experience}
 \noindent
 $for(experience)$
-\note{$experience.years$}\textsc{$experience.employer$}\\
-\emph{$experience.job$}\\
+\footnotesize{$experience.years$}\\
+\textsc{$experience.employer$}, \emph{$experience.job$}\\
 $experience.city$\\[.2cm]
+$experience.description$\\\\
 $endfor$
 
-$if(education)$
+\vspace{-15pt}
+
+\begin{multicols}{2}
+
 \section*{Education}
 \noindent
 $for(education)$
-\note{$education.year$}\textbf{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
-\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[.2cm]
+\footnotesize{$education.year$}\\
+\emph{$education.institute$}\\
+\textbf{$education.subject$}, $education.degree$\\
+$education.city$\\[.2cm]
 $endfor$
-$endif$
 
-$if(languages)$
-\section*{Languages}
-$for(languages)$
-\emph{$languages.language$} ($languages.proficiency$)\\
+\columnbreak
+
+\section*{Cerification}
+$for(cerification)$
+$cerification.title$ ($cerification.dates$)\\
 $endfor$
-$endif$
+
+\section*{Skills}
+$for(skills)$
+$skills$\\
+$endfor$
+
+\end{multicols}
+
+
+
+
+\pagebreak
+
+\section*{Projects}
+\noindent
+$for(education)$
+\footnotesize{$education.year$}\\
+\emph{$education.institute$}\\
+\textbf{$education.subject$}, $education.degree$\\
+$education.city$\\[.2cm]
+$endfor$
 
 \end{document}
