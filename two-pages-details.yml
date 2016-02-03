@@ -1,0 +1,166 @@
+---
+# Settings
+#mainfont: Hoefler Text
+mainfont: Linux Libertine O
+fontsize: 8pt
+lang: English
+geometry: a4paper, left=28mm, right=28mm, top=17mm, bottom=17mm
+
+
+# Personal details
+name: Tomasz Michal Klosinski
+address:
+- "16 Avenue du Jura"
+- "01210 Ferney-Voltaire"
+- "France"
+phone: "+33 755 77 37 37"
+email: tomasz.klosinski@protonmail.ch
+# Insert URLs without http://
+linkedin: tklosinski
+gpg:
+  key: "E75959B0"
+  url: "http://pgp.mit.edu/pks/lookup?op=get&search=0x0F79558EE75959B0"
+
+# Sections
+
+quote:
+  text: "We do not act rightly because we have virtue or excellence, but we rather have those because we have acted rightly.\\
+  We are what we repeatedly do. Excellence, then, is not an act but a habit."
+  author: "Aristotle"
+  book: "Nichomachean Ethics"
+
+intro:
+  - "I am B.A. graduate of Computer Science and B.A. graduate of Business Management, both held in English, at University of Lodz,
+    and M.A. graduate of IT (Databases) at Polish-Japanese Academy of Information Technology.
+    I have been working in Linux world for last 4 years and I have been passionate Linux user for over 13 years.
+    My current position is System Engineer in DevOps and Infrastructure teams at CERN Control Center."
+  # - "My current position is System Engineer for DevOps and Infrastructure teams at CERN Control Center."
+
+interests:
+- DevOps, Continuous Delivery
+- Cloud Computing, IT Infrastructure
+- Management, Agile Methodologies
+
+languages:
+- language: Polish
+  proficiency: Native proficiency
+- language: English
+  proficiency: Full professional proficiency
+- language: French
+  proficiency: Limited professional proficiency
+
+experience:
+- years: "2015--2016"
+  employer: CERN
+  job: Project Associate
+  city: Geneva
+  description:
+    "At CERN Control Center I have been working in support team of over 2000 (OpenStack) VMs, desktops and servers (60% real-time kernel).
+    Most of the servers that I have been taking care of were Linux machines providing the mission critical software for the operation of LHC and other accelerators.
+    Along with my daily support and troubleshooting tasks, I have been involved in numerous activities in System Administration Modernisation project."
+- years: "2014–-2015"
+  employer: Linux Polska
+  job: Solution Architect
+  city: Warsaw
+  description:
+    "At Linux Polska I have worked on a continuous delivery system for building rpm packages.
+    I have contributed also to the organization of the biggest Open Source event in Poland (which Linux Polska is co-organizing every year in May): Open Source Day."
+- years: "2011--2014"
+  employer: IMPAQ
+  job: Software / System Engineer
+  city: Warsaw
+  description:
+    "My career as a System Engineer at IMPAQ can be split into two periods.
+    For first half year I have been member of a support team of RHEL-based telco applications for international cellular networks.
+    For another 1.5+ year I have worked for Machine-to-Machine, Cloud Computing and Big Data Business Practice (Department)."
+- years: "2010--2011"
+  employer: Outbox
+  job: Junior Consultant
+  city: Warsaw
+  description:
+    "At Outbox I have worked on the development of the CRM system based on Oracle PeopleSoft platform for Telekomunikacja Polska SA."
+
+education:
+- year: "2010--2012"
+  subject: Databases
+  degree: M.A.
+  institute: Polish-Japanese Academy of Information Technology
+  city: Warsaw
+- year: "2008--2011"
+  subject: Business Management
+  degree: B.A.
+  institute: University of Lodz
+  city: Lodz
+- year: "2007--2010"
+  subject: Computer Science
+  degree: B.A.
+  institute: University of Lodz
+  city: Lodz
+
+cerification:
+  - title: Red Hat Certified Engineer
+    license: 140-054-446
+    url: "https://www.redhat.com/wapps/training/certification/verify.html?certNumber=140-054-446&isSearch=False&verify=Verify"
+    dates: "2014--2017"
+  - title: Red Hat Certified System Administrator
+    license: 140-054-446
+    url: "https://www.redhat.com/wapps/training/certification/verify.html?certNumber=140-054-446&isSearch=False&verify=Verify"
+    dates: "2014--2017"
+
+
+skills:
+  - Linux, Bash
+  - Ansible, Python, Vagrant, Chef, Ruby, Jenkins
+  - Elasticsearch, Logstash, Kibana
+  - MySQL, PostgreSQL
+  - Apache HTTPD, nginx, HAProxy
+  - Nagios, Zabbix
+
+
+projects:
+  - name: "Process Management and Deployment (PoC)"
+    occupation: "CERN BE-CO-IN"
+    dates: "08/2015--Present"
+    description:
+      "One of our most challenging projects at CERN BE-CO-IN section was to design and implement
+      the Proof of Concept platform that could replace the former legacy service management solution,
+      while keeping the interface and release-deploy-configure workflow for users backward compatible.
+      The platform consisted of Python and Ansible-based tool for deployment of the accelerators controls applications,
+      adding/removing the services to/from an applications database (to make them persistent across installations),
+      and generating configuration for service monitoring and management (based on monit).
+      Additionally, we provided a consistent solution for supplying the user specific checks for a service or group of services."
+
+  - name: "System Administration Modernisation Project"
+    occupation: "CERN BE-CO-IN"
+    dates: "04/2015--Present"
+    description:
+      "The goal of System Administration Modernisation Project was to review current system administration practices and proposes and implement an integrated set of tools, procedures and workflows in order to bring the benefits of modern software development techniques to the maintenance of the control system computing environment.  Particular emphasis was placed upon testing, staging and reproducibility of configurations.
+
+The following areas were addressed:
+* Configuration Management (Ansible) and Version Control (git)
+* Installation and Configuration (PXE, kickstart)
+* Process Management and Monitoring (monit, auditd)
+* Tracing and Log Analysis (rsyslog, Elasticsearch/Logalike/Kibana)"
+
+  - name: "Accelerator Project Exploitation Tools - Tracing"
+    occupation: "CERN BE-CO-IN"
+    dates: "05/2015--Present"
+    description:
+      "Accelerator Project Exploitation Tools (ACET) provide the accelerator operations crew and operations experts with good diagnostic and troubleshooting tools. ACET Tracing is a logging service based on Elasticsearch, Kibana and Logalike stack. Tracing serves graphical views of logging data over time and is useful to visually diagnose problems, either by exploratory searches or pre-defined views of the data. Tracing uses Elasticsearch for storage and indexing and Kibana for data representation. Logalike serves as an integration tool collecting the data from various sources; it process, caches and finally sends the data as an input to Elasticsearch datastore.
+
+CERN's Logalike, lookalike of Logstash written in Java 8, is an open source project available at github: https://github.com/CERN-BE/logalike"
+
+  - name: "Automated Delivery Pipeline for building RPM packages"
+    occupation: "Linux Polska"
+    dates: "02/2015--03/2016"
+    description:
+      "At Linux Polska I have had the opportunity to work with two great Linux ninjas on an exciting DevOps project. The system we have been developing was an Automated Delivery Pipeline for building RPM packages based set of bash scripts combined into consistent chain of jobs (and eventual rollbacks) in Jenkins. My responsibilities in the project included maintenance of the services crucial - Jenkins, GitLab. I have developed also multitude of mostly bash (and sometimes Python) scripts versioned in git repositories. For building RPM packages we have used set of open source tools (mostly from Fedora Project) - koji, mock, mash/createrepo, revisor/pungi, Sigul. Our testing environment was based on Vagrant, Packer, RHEV's virtual machines spawned during the testing phase and removed after it success or failure. We have monitored all services using Zabbix."
+
+  - name: "Automated Delivery Pipeline for building RPM packages"
+    occupation: "Linux Polska"
+    dates: "02/2015--03/2016"
+    description:
+      "At Linux Polska I have had the opportunity to work with two great Linux ninjas on an exciting DevOps project. The system we have been developing was an Automated Delivery Pipeline for building RPM packages based set of bash scripts combined into consistent chain of jobs (and eventual rollbacks) in Jenkins. My responsibilities in the project included maintenance of the services crucial - Jenkins, GitLab. I have developed also multitude of mostly bash (and sometimes Python) scripts versioned in git repositories. For building RPM packages we have used set of open source tools (mostly from Fedora Project) - koji, mock, mash/createrepo, revisor/pungi, Sigul. Our testing environment was based on Vagrant, Packer, RHEV's virtual machines spawned during the testing phase and removed after it success or failure. We have monitored all services using Zabbix."
+
+
+---

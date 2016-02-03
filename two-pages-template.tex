@@ -3,7 +3,6 @@
 
 \documentclass[$fontsize$, a4paper]{article}
 
-
 % LAYOUT
 %--------------------------------
 % Margins
@@ -109,9 +108,11 @@ PGP: \href{$gpg.url$}{$gpg.key$}\\\\
 \end{center}
 \end{changemargin}
 
-$intro$
+$for(intro)$
+$intro$\\\\
+$endfor$
 
-\vspace{-5pt}
+\vspace{-20pt}
 
 \begin{multicols}{2}
 
@@ -157,7 +158,7 @@ $endfor$
 
 \section*{Cerification}
 $for(cerification)$
-\href{$cerification.url$}{$cerification.title$} ($cerification.dates$)\\
+$cerification.title$ ($cerification.dates$)\\
 $endfor$
 
 \section*{Skills}
@@ -172,15 +173,11 @@ $endfor$
 
 \pagebreak
 
-\section*{Latest projects}
-\begin{itemize}
-    $for(projects)$
-      \item \footnotesize{$projects.dates$}\\
-      \textbf{$projects.name$} @ \emph{$projects.occupation$}\\\\
-      $projects.description$\\\\
-    $endfor$
-\end{itemize}
-
-Rest of the projects and more detailed descriptions can be find at \href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}.
+\section*{Projects}
+$for(projects)$
+\footnotesize{$projects.dates$}\\
+\textbf{$projects.name$} @ \emph{$projects.occupation$}\\\\
+$projects.description$\\
+$endfor$
 
 \end{document}
