@@ -174,12 +174,10 @@ $endfor$
 \pagebreak
 
 \section*{Projects}
-\noindent
-$for(education)$
-\footnotesize{$education.year$}\\
-\emph{$education.institute$}\\
-\textbf{$education.subject$}, $education.degree$\\
-$education.city$\\[.2cm]
+$for(projects)$
+\footnotesize{$projects.dates$}\\
+\textbf{$projects.name$} @ \emph{$projects.occupation$}\\\\
+$projects.description$\\
 $endfor$
 
 \end{document}

@@ -108,6 +108,20 @@ skills:
   - Apache HTTPD, nginx, HAProxy
   - Nagios, Zabbix
 
+
+projects:
+  - name: "Process Management and Deployment (PoC)"
+    occupation: "CERN BE-CO-IN"
+    dates: "08/2015--Present"
+    description:
+      "One of our most challenging projects at CERN BE-CO-IN section was to design and implement
+      the Proof of Concept platform that could replace the former legacy service management solution,
+      while keeping the interface and release-deploy-configure workflow for users backward compatible.
+      The platform consisted of Python and Ansible-based tool for deployment of the accelerators controls applications,
+      adding/removing the services to/from an applications database (to make them persistent across installations),
+      and generating configuration for service monitoring and management (based on monit).
+      Additionally, we provided a consistent solution for supplying the user specific checks for a service or group of services."
+
 # Settings
 #mainfont: Hoefler Text
 mainfont: Linux Libertine O
