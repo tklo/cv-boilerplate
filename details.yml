@@ -30,8 +30,8 @@ quote:
   book: "Nichomachean Ethics"
 
 intro:
-  "I am B.A. graduate of Computer Science and B.A. graduate of Business Management, both held in English, at University of Lodz,
-  and M.A. graduate of IT (Databases) at Polish-Japanese Academy of Information Technology.
+  "I am M.A. graduate of IT (Databases) at Polish-Japanese Academy of Information Technology,
+  B.A. graduate of Computer Science and B.A. graduate of Business Management, both held in English, at University of Lodz.
   I have been working in Linux world for last 4 years and I have been passionate Linux user for over 13 years.
   My current position is System Engineer in DevOps and Infrastructure teams at CERN Control Center."
 
@@ -46,7 +46,7 @@ languages:
 - language: English
   proficiency: Full professional proficiency
 - language: French
-  proficiency: Limited professional proficiency
+  proficiency: Elementary proficiency
 
 experience:
 - years: "2015--2016"
@@ -67,7 +67,7 @@ experience:
   description:
     "At Linux Polska I have worked on a continuous delivery system for building rpm packages.
     I have contributed also to the organization of the biggest Open Source event in Poland
-    (which Linux Polska is co-organizing every year in May): Open Source Day."
+    (which Linux Polska is co-organizing every year in May): \\href{http://opensourceday.com/}{Open Source Day}."
 
 - years: "2011--2014"
   employer: IMPAQ
@@ -119,7 +119,7 @@ skills:
   - Elasticsearch, Logstash, Kibana
   - MySQL, PostgreSQL
   - Apache HTTPD, nginx, HAProxy
-  - Nagios, Zabbix
+  - Nagios, Zabbix, Monit
 
 
 projects:

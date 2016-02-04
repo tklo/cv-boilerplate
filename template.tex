@@ -18,7 +18,7 @@
 \setlength{\columnsep}{10pt}
 
 % Uncomment to suppress page numbers
-% \pagenumbering{gobble}
+\pagenumbering{gobble}
 
 % LANGUAGE
 %--------------------------------
@@ -83,35 +83,23 @@
 
 $for(address)$
 $address$\\
-$endfor$
-
-\vspace{-10pt}
-
+$endfor$\\
 $phone$
 
 \columnbreak
 
 \href{mailto:$email$}{$email$}\\
 PGP: \href{$gpg.url$}{$gpg.key$}\\\\
-\href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}
 
+For detailed list of projects visit:\\
+\href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}
 
 \end{multicols}
 
-\vspace{-5pt}
-
-\begin{changemargin}{0.5cm}{0.5cm}
-\begin{center}
-\begin{scriptsize}
-\emph{$quote.text$}\\
-—$quote.author$, \emph{$quote.book$}\\
-\end{scriptsize}
-\end{center}
-\end{changemargin}
+\vspace{15pt}
 
 $intro$
 
-\vspace{-5pt}
 
 \begin{multicols}{2}
 
@@ -129,7 +117,7 @@ $endfor$
 
 \end{multicols}
 
-\vspace{-15pt}
+\vspace{-10pt}
 
 \section*{Previous Experience}
 \noindent
@@ -140,7 +128,7 @@ $experience.city$\\[.2cm]
 $experience.description$\\\\
 $endfor$
 
-\vspace{-15pt}
+\vspace{-10pt}
 
 \begin{multicols}{2}
 
@@ -166,21 +154,5 @@ $skills$\\
 $endfor$
 
 \end{multicols}
-
-
-
-
-\pagebreak
-
-\section*{Latest projects}
-\begin{itemize}
-    $for(projects)$
-      \item \footnotesize{$projects.dates$}\\
-      \textbf{$projects.name$} @ \emph{$projects.occupation$}\\\\
-      $projects.description$\\\\
-    $endfor$
-\end{itemize}
-
-Rest of the projects and more detailed descriptions can be find at \href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}.
 
 \end{document}
