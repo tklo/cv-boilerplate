@@ -2,18 +2,20 @@
 # Settings
 #mainfont: Hoefler Text
 mainfont: "Linux Libertine O"
-fontsize: "10pt"
+fontsize: "10.5pt"
 lang: "English"
 geometry: "a4paper, left=28mm, right=28mm, top=17mm, bottom=17mm"
 
 
 # Personal details
-name: Tomasz Michał Kłosiński
+name: Tomasz Michal Klosinski
 address:
 - "Konstancinska 3A"
 - "Warsaw"
 - "Poland"
-phone: "+48 796 800 073"
+phone:
+  - "+33 755 77 37 37"
+  # - "+48 796 80 00 73"
 email: tomasz.klosinski@protonmail.ch
 # Insert URLs without http://
 linkedin: tklosinski
@@ -23,23 +25,23 @@ gpg:
 
 # Sections
 intro:
-  "I am M.A. graduate of IT (Databases) at Polish-Japanese Academy of Information Technology,
+  "I am M.A. graduate of IT (Databases) at Polish-Japanese Academy of Information Technology in Warsaw,
   B.A. graduate of Computer Science and B.A. graduate of Business Management, both held in English, at University of Lodz.
-  I have been working in Linux world for last 4 years and I have been passionate Linux user for over 13 years.
-  My current position is System Engineer in DevOps and Infrastructure teams at CERN Control Center."
+  I have been working in the Linux world for the last 4 years and I have been passionate Linux user for over 13 years.
+  My current position is System Engineer in DevOps and Infrastructure team at CERN Control Center."
 
 interests:
 - DevOps, Continuous Delivery
-- Cloud Computing, IT Infrastructure
+- Big Data, Cloud Computing, IT Infrastructure
 - Agile Methodologies
 
 languages:
 - language: Polish
-  proficiency: Native proficiency
+  proficiency: Native
 - language: English
-  proficiency: Full professional proficiency
+  proficiency: C1
 - language: French
-  proficiency: Elementary proficiency
+  proficiency: B1
 
 experience:
 - years: "2015--2016"
@@ -47,11 +49,11 @@ experience:
   job: Project Associate
   city: Geneva
   description:
-    "At CERN Control Center I have been working in support team of over 2000 (OpenStack) VMs/desktops and servers (60% real-time kernel).
-    Most of the servers that I have been taking care of were Linux machines providing the mission critical software
+    "At CERN Control Center I have been working in the support team of over 2000 (OpenStack) VMs, desktops and servers.
+    Most of the servers that I have been taking care of were Linux machines providing mission critical software
     (code base of over 10 MLOC of Java and 500 kLOC of C++ and C, structured in roughly 1000 projects) for the operation of LHC and other accelerators.
-    Along with my daily support and troubleshooting tasks (for around 70 accelerator operators and 200 software developers),
-    I have been involved in numerous activities in System Administration Modernisation project."
+    Along with my daily support and troubleshooting tasks for around 70 accelerator operators and 200 software developers,
+    I have been involved in numerous activities in the System Administration Modernisation project."
 
 - years: "2014–-2015"
   employer: Linux Polska
@@ -107,8 +109,9 @@ cerification:
 
 
 skills:
-  - Linux, Bash
+  - Linux (RHEL, CentOS), Bash
   - Ansible, Python, Vagrant, Chef, Ruby, Jenkins
+  - Cloudera Hadoop
   - OpenStack, Eucalyptus, Amazon Web Services
   - Elasticsearch, Logstash, Kibana
   - MySQL, PostgreSQL
@@ -118,10 +121,10 @@ skills:
 
 projects:
   - name: "Process Management and Deployment (PoC)"
-    occupation: "CERN, Beam Department, Control Group, Infrastructure Section"
-    dates: "08/2015--Present"
+    occupation: "CERN, BE-CO-IN"
+    years: "08/2015--Present"
     description:
-      "One of our most challenging projects at CERN BE-CO-IN section was to design and implement
+      "* One of our most challenging projects at CERN BE-CO-IN section was to design and implement
       the Proof of Concept platform that could replace the former legacy service management solution,
       while keeping the interface and release-deploy-configure workflow for users backward compatible.
       The platform consisted of Python and Ansible-based tool for deployment of the accelerators controls applications,
@@ -130,75 +133,76 @@ projects:
       Additionally, we provided a consistent solution for supplying the user specific checks for a service or group of services."
 
   - name: "System Administration Modernisation Project"
-    occupation: "CERN, Beam Department, Control Group, Infrastructure Section"
-    dates: "04/2015--Present"
+    occupation: "CERN, BE-CO-IN"
+    years: "04/2015--Present"
     description:
-      "The goal of System Administration Modernisation Project was to review current system administration practices and proposes
-      and implement an integrated set of tools, procedures and workflows in order to bring the benefits of modern software development
-      techniques to the maintenance of the control system computing environment.  Particular emphasis was placed upon testing,
-      staging and reproducibility of configurations.\\\
-
-      \\\
-
-      My responsibilities in the project have been mostly related to the transformation of an old bash/awk/Python script-based
+      "* My responsibilities in the project have been mostly related to the transformation of an old bash/awk/Python script-based
       configuration management to a modern Ansible-based solution. One of the main goals of the project was to replace
-      inconsistent (and in some cases non-existing) version controlling systems of various parts of system configuration with a single git tree.\\\
+      inconsistent (and in some cases non-existing) version controlling systems of various parts of system configuration with a single git tree.
 
-      Some of the most interesting challenges I have faced included developing Ansible playbooks for:\\\
+      * Some of the most interesting challenges I have faced included developing Ansible playbooks for:\\\
 
-      - converting Python-based variable database into a set of Ansible variables\\\
+      ** converting Python-based variable database into a set of Ansible variables\\\
 
-      - converting specific sudo and SSH configuration for all machines\\\
+      ** converting specific sudo and SSH configuration for all machines\\\
 
-      - implementing a filesystem monitoring system based on auditd, rsyslog, Elasticsearch, Logalike and Kibana (dashboards)\\\
+      ** implementing a filesystem monitoring system based on auditd, rsyslog, Elasticsearch, Logalike and Kibana (dashboards)\\\
 
-      - massive analysis, comparison, fixing errors and making more consistent of kickstart files for all 2000+ machines (included also changes in PXE servers and generating kickstart files based on Ansible inventory file and CERN's internal sources of data about hosts)\\\
+      ** massive analysis, comparison, fixing errors and making more consistent of kickstart files for all 2000+ machines (included also changes in PXE servers and generating kickstart files based on Ansible inventory file and CERN's internal sources of data about hosts)\\\
 
-      - creating monit configuration for process management and monitoring."
+      ** creating monit configuration for process management and monitoring."
 
   - name: "Accelerator Project Exploitation Tools - Tracing"
-    occupation: "CERN, Beam Department, Control Group, DevOps Section"
-    dates: "05/2015--Present"
+    occupation: "CERN, BE-CO-DO"
+    years: "05/2015--Present"
     description:
-      "Accelerator Project Exploitation Tools (ACET) provided the accelerator operations crew and operations experts with
-      diagnostic and troubleshooting tools. ACET Tracing was a logging service based on Elasticsearch, Kibana and Logalike stack.
-      Tracing served graphical views of logging data over time and was useful to visually diagnose problems, either by exploratory
-      searches or pre-defined views of the data. Tracing used Elasticsearch for storage and indexing, and Kibana for data representation.
-      Logalike served as an integration tool collecting the data from various sources; it processed, cached and finally sent the data
-      as an input to Elasticsearch datastore.\\\
-
-      \\\
-
-      My main responsibility in DO has been system administration activities regarding the Elasticsearch/Logalike/Kibana clusters,
+      "* My main responsibility in DO has been system administration activities regarding the Elasticsearch/Logalike/Kibana clusters,
       that served as a database, search and dashboarding system for the accelerator controls applications and Linux servers' logging.\\\
 
-      Among numerous tasks in this area, I have been working on:\\\
+      * Among numerous tasks in this area, I have been working on:\\\
 
-      - preparation of the operation systems for the smooth clusters operation\\\
+      ** preparation of the operation systems for the smooth clusters operation\\\
 
-      - upgrade to ES 2.0 and Kibana 4\\\
+      ** upgrade to ES 2.0 and Kibana 4\\\
 
-      - creation of nginx reverse proxy configuration\\\
+      ** creation of nginx reverse proxy configuration\\\
 
-      - creation of monit configuration and checks for all ELK services\\\
+      ** creation of monit configuration and checks for all ELK services\\\
 
-      - a little bit of Java 8 programming (Logalike extension)."
+      ** a little bit of Java 8 programming (Logalike extension)."
 
   - name: "Automated Delivery Pipeline for building RPM packages"
     occupation: "Linux Polska"
-    dates: "02/2015--03/2016"
+    years: "02/2015--03/2016"
     description:
-      "At Linux Polska I have had the opportunity to work with two great Linux professionals on an exciting DevOps project.
-      The system we have been developing was an Automated Delivery Pipeline for building RPM packages based set of bash scripts
-      combined into consistent chain of jobs (and eventual rollbacks) in Jenkins.\\\
-
-      \\\
-
+      "* At Linux Polska I have had the opportunity to design and implement Automated Delivery Pipeline for building RPM packages based set of bash scripts
+      combined into consistent chain of jobs (and eventual rollbacks) in Jenkins.
       My responsibilities in the project included maintenance of the crucial services: Jenkins, GitLab.
       I have developed also multitude of mostly bash (and sometimes Python) scripts. I have managed also our git repositories.
       For building RPM packages we have used set of open source tools (mostly from Fedora Project):
       koji, mock, mash/createrepo, revisor/pungi, Sigul.
       Our testing environment was based on Vagrant, Packer, RHEV's virtual machines spawned during
       the testing phase and removed after it success or failure. We have monitored all services using Zabbix."
+
+  - name: "Big Data, Cloud Computing and DevOps POC projects"
+    occupation: "IMPAQ"
+    years: "07/2012--01/2014"
+    description:
+      "(1) In the very early stage of its development, I've worked on establishing and maintenance a (Ubuntu Server and KVM-based)
+      OpenStack 12-nodes cluster integrated with a GlusterFS cluster (as a replacement for NFS for instance migration between nodes).
+      Installation and configuration of the machines had been automated with Opscode Chef.
+      I have really enjoyed it, although at that time it was too early for adoption for OpenStack in production.
+      Similar deployment has been prepared by me also for Eucalyptus cloud (except the OS difference: in this project I have used CentOS).\\\
+
+      (2) Successful evaluation of Chef as a DevOps configuration management tool, resulted in adoption of it in of our clients project.
+      I have written a chef cookbook for automatic orchestration of development and testing environment of Java web application
+      run on Apache Tomcat and using Oracle XE 11g. It was an application for one of the biggest Polish insurance companies.\\\
+
+      (3) Finally, I have worked on few Proof of Concept projects evaluating Cloudera Hadoop.
+      I was responsible for installation, configuration (using Chef) and maintenance of the cluster and additional tools.
+      The projects outcome was a set of MapReduce jobs (written in Java) and deployed on 20 nodes Hadoop cluster,
+      operating on 10TB of data. Additionally, we have used Flume for integration with Twitter API.
+      MR Job's configuration was managed with Oozie.
+      I've also integrated R Statistical Language with the cluster and I have written dozens of shell scripts for file manipulations on HDFS. "
 
 ---

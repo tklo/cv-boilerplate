@@ -3,6 +3,8 @@
 
 \documentclass[$fontsize$, a4paper]{article}
 
+\usepackage{enumitem}
+
 % LAYOUT
 %--------------------------------
 % Margins
@@ -17,7 +19,7 @@
 \setlength{\columnsep}{10pt}
 
 % Uncomment to suppress page numbers
-\pagenumbering{gobble}
+% \pagenumbering{gobble}
 
 % LANGUAGE
 %--------------------------------
@@ -82,7 +84,9 @@
 
 \begin{multicols}{2}
 
+$for(phone)$
 $phone$\\
+$endfor$
 \href{mailto:$email$}{$email$}\\
 
 \columnbreak
@@ -92,7 +96,7 @@ For detailed list of projects visit:\\
 
 \end{multicols}
 
-\vspace{15pt}
+\vspace{10pt}
 
 
 
@@ -100,6 +104,7 @@ For detailed list of projects visit:\\
 
 $intro$
 
+\vspace{5pt}
 
 % SKILLS
 
@@ -107,14 +112,14 @@ $intro$
 
 \subsection*{Skills}
 $for(skills)$
-$skills$\\
+-- $skills$\\
 $endfor$
 
 \columnbreak
 
 \subsection*{Areas of Interest}
 $for(interests)$
-$interests$\\
+-- $interests$\\
 $endfor$
 
 \end{multicols}
@@ -160,6 +165,20 @@ $for(experience)$
 \textsc{$experience.employer$}, \emph{$experience.job$}\\
 $experience.city$\\[.2cm]
 $experience.description$\\\\
+$endfor$
+
+\pagebreak
+
+\section*{Most relevant projects}
+\noindent
+$for(projects)$
+\footnotesize{$projects.years$}\\
+\textbf{\textsc{$projects.name$}} @ \emph{$projects.occupation$}\\[.2cm]
+$projects.description$
+
+\vspace{5pt}
+\noindent\rule[0.5ex]{\linewidth}{1pt}
+
 $endfor$
 
 \end{document}
