@@ -3,7 +3,6 @@
 
 \documentclass[$fontsize$, a4paper]{article}
 
-
 % LAYOUT
 %--------------------------------
 % Margins
@@ -79,17 +78,14 @@
 {\LARGE $name$}\\[.2cm]
 
 
+% CONTACT
+
 \begin{multicols}{2}
 
-$for(address)$
-$address$\\
-$endfor$\\
-$phone$
+$phone$\\
+\href{mailto:$email$}{$email$}\\
 
 \columnbreak
-
-\href{mailto:$email$}{$email$}\\
-PGP: \href{$gpg.url$}{$gpg.key$}\\\\
 
 For detailed list of projects visit:\\
 \href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}
@@ -98,26 +94,64 @@ For detailed list of projects visit:\\
 
 \vspace{15pt}
 
+
+
+% INTRO
+
 $intro$
 
 
+% SKILLS
+
 \begin{multicols}{2}
+
+\subsection*{Skills}
+$for(skills)$
+$skills$\\
+$endfor$
+
+\columnbreak
 
 \subsection*{Areas of Interest}
 $for(interests)$
 $interests$\\
 $endfor$
 
+\end{multicols}
+
+
+% EDUCATION
+
+\begin{multicols}{2}
+
+\subsection*{Education}
+$for(education)$
+\footnotesize{$education.year$}\\
+\emph{$education.institute$}\\
+\textbf{$education.subject$}, $education.degree$\\
+$endfor$
+
 \columnbreak
+
+\subsection*{Cerification}
+$for(cerification)$
+\href{$cerification.url$}{$cerification.title$} ($cerification.dates$)\\
+$endfor$
+
+\vspace{-5pt}
 
 \subsection*{Languages}
 $for(languages)$
 \emph{$languages.language$} ($languages.proficiency$)\\
 $endfor$
 
+
 \end{multicols}
 
 \vspace{-10pt}
+
+
+% EXPERIENCE
 
 \section*{Previous Experience}
 \noindent
@@ -127,32 +161,5 @@ $for(experience)$
 $experience.city$\\[.2cm]
 $experience.description$\\\\
 $endfor$
-
-\vspace{-10pt}
-
-\begin{multicols}{2}
-
-\section*{Education}
-\noindent
-$for(education)$
-\footnotesize{$education.year$}\\
-\emph{$education.institute$}\\
-\textbf{$education.subject$}, $education.degree$\\
-$education.city$\\[.2cm]
-$endfor$
-
-\columnbreak
-
-\section*{Cerification}
-$for(cerification)$
-\href{$cerification.url$}{$cerification.title$} ($cerification.dates$)\\
-$endfor$
-
-\section*{Skills}
-$for(skills)$
-$skills$\\
-$endfor$
-
-\end{multicols}
 
 \end{document}

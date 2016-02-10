@@ -2,18 +2,18 @@
 # Settings
 #mainfont: Hoefler Text
 mainfont: "Linux Libertine O"
-fontsize: "8pt"
+fontsize: "10pt"
 lang: "English"
 geometry: "a4paper, left=28mm, right=28mm, top=17mm, bottom=17mm"
 
 
 # Personal details
-name: Tomasz Michal Klosinski
+name: Tomasz Michał Kłosiński
 address:
-- "16 Avenue du Jura"
-- "01210 Ferney-Voltaire"
-- "France"
-phone: "+33 755 77 37 37"
+- "Konstancinska 3A"
+- "Warsaw"
+- "Poland"
+phone: "+48 796 800 073"
 email: tomasz.klosinski@protonmail.ch
 # Insert URLs without http://
 linkedin: tklosinski
@@ -22,13 +22,6 @@ gpg:
   url: "http://pgp.mit.edu/pks/lookup?op=get&search=0x0F79558EE75959B0"
 
 # Sections
-
-quote:
-  text: "We do not act rightly because we have virtue or excellence, but we rather have those because we have acted rightly.
-  We are what we repeatedly do. Excellence, then, is not an act but a habit."
-  author: "Aristotle"
-  book: "Nichomachean Ethics"
-
 intro:
   "I am M.A. graduate of IT (Databases) at Polish-Japanese Academy of Information Technology,
   B.A. graduate of Computer Science and B.A. graduate of Business Management, both held in English, at University of Lodz.
@@ -38,7 +31,7 @@ intro:
 interests:
 - DevOps, Continuous Delivery
 - Cloud Computing, IT Infrastructure
-- Management, Agile Methodologies
+- Agile Methodologies
 
 languages:
 - language: Polish
@@ -89,7 +82,7 @@ education:
 - year: "2010--2012"
   subject: Databases
   degree: M.A.
-  institute: Polish-Japanese Academy of Information Technology
+  institute: Polish-Japanese Academy of Information Technology (Warsaw)
   city: Warsaw
 - year: "2008--2011"
   subject: Business Management
@@ -116,6 +109,7 @@ cerification:
 skills:
   - Linux, Bash
   - Ansible, Python, Vagrant, Chef, Ruby, Jenkins
+  - OpenStack, Eucalyptus, Amazon Web Services
   - Elasticsearch, Logstash, Kibana
   - MySQL, PostgreSQL
   - Apache HTTPD, nginx, HAProxy
