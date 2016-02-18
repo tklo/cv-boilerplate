@@ -14,8 +14,8 @@ address:
 - "Warsaw"
 - "Poland"
 phone:
-  - "+33 755 77 37 37"
   # - "+48 796 80 00 73"
+  - "+33 755 77 37 37"
 email: tomasz.klosinski@protonmail.ch
 # Insert URLs without http://
 linkedin: tklosinski
@@ -108,7 +108,7 @@ cerification:
     dates: "2014--2017"
 
 
-skills:
+skill:
   - Linux (RHEL, CentOS), Bash
   - Ansible, Python, Vagrant, Chef, Ruby, Jenkins
   - Cloudera Hadoop
@@ -119,8 +119,13 @@ skills:
   - Nagios, Zabbix, Monit
 
 
-projects:
+project:
   - name: "Process Management and Deployment (PoC)"
+    tags:
+      - Ansible
+      - Python
+      - Bash
+      - monit
     occupation: "CERN, BE-CO-IN"
     years: "08/2015--Present"
     description:
@@ -133,6 +138,13 @@ projects:
       Additionally, we provided a consistent solution for supplying the user specific checks for a service or group of services."
 
   - name: "System Administration Modernisation Project"
+    tags:
+      - Ansible
+      - git
+      - auditd
+      - kickstart
+      - PXE
+      - monit"
     occupation: "CERN, BE-CO-IN"
     years: "04/2015--Present"
     description:
@@ -153,6 +165,16 @@ projects:
       ** creating monit configuration for process management and monitoring."
 
   - name: "Accelerator Project Exploitation Tools - Tracing"
+    tags:
+      - Ansible
+      - monit
+      - Elasticsearch
+      - Logalike
+      - Logstash
+      - Kibana
+      - nginx
+      - monit
+      - Java
     occupation: "CERN, BE-CO-DO"
     years: "05/2015--Present"
     description:
@@ -172,6 +194,15 @@ projects:
       ** a little bit of Java 8 programming (Logalike extension)."
 
   - name: "Automated Delivery Pipeline for building RPM packages"
+    tags:
+      - Jenkins
+      - git
+      - Bash
+      - RPM
+      - GitLab
+      - Koji
+      - Vagrant
+      - Chef
     occupation: "Linux Polska"
     years: "02/2015--03/2016"
     description:
@@ -185,6 +216,12 @@ projects:
       the testing phase and removed after it success or failure. We have monitored all services using Zabbix."
 
   - name: "Big Data, Cloud Computing and DevOps POC projects"
+    tags:
+      - OpenStack
+      - GlusterFS
+      - KVM
+      - Chef
+      - Hadoop
     occupation: "IMPAQ"
     years: "07/2012--01/2014"
     description:

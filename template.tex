@@ -91,7 +91,7 @@ $endfor$
 
 \columnbreak
 
-For detailed list of projects visit:\\
+For detailed list of project visit:\\
 \href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}
 
 \end{multicols}
@@ -110,9 +110,9 @@ $intro$
 
 \begin{multicols}{2}
 
-\subsection*{Skills}
-$for(skills)$
--- $skills$\\
+\subsection*{skill}
+$for(skill)$
+-- $skill$\\
 $endfor$
 
 \columnbreak
@@ -169,12 +169,16 @@ $endfor$
 
 \pagebreak
 
-\section*{Most relevant projects}
+% $for(project.tags)$
+% \marginpar{\scriptsize\texttt{{\#$project.tags$}}}
+% $endfor$
+
+\section*{Most relevant project}
 \noindent
-$for(projects)$
-\footnotesize{$projects.years$}\\
-\textbf{\textsc{$projects.name$}} @ \emph{$projects.occupation$}\\[.2cm]
-$projects.description$
+$for(project)$
+\footnotesize{$project.years$}\\
+\textbf{\textsc{$project.name$}} @ \emph{$project.occupation$}\\[.2cm]
+$project.description$
 
 \vspace{5pt}
 \noindent\rule[0.5ex]{\linewidth}{1pt}
