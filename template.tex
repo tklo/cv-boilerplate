@@ -3,8 +3,6 @@
 
 \documentclass[$fontsize$, a4paper]{article}
 
-\usepackage{enumitem}
-
 % LAYOUT
 %--------------------------------
 % Margins
@@ -78,48 +76,51 @@
 \begin{document}
 
 {\LARGE $name$}\\[.2cm]
-
+{\large \textsl{DevOps / System Engineer}}\\[.1cm]
 
 % CONTACT
 
 \begin{multicols}{2}
 
 $for(phone)$
-$phone$\\
+$phone$
 $endfor$
+
 \href{mailto:$email$}{$email$}\\
 
 \columnbreak
 
-For detailed list of project visit:\\
+For detailed list of projects visit:\\
 \href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}
+
+% Born: 1987\\
+% Nationality: Polish\\
+% Martial status: married\\
 
 \end{multicols}
 
-\vspace{10pt}
 
-
+% \vspace{10pt}
 
 % INTRO
-
 $intro$
 
-\vspace{5pt}
+% \vspace{5pt}
 
 % SKILLS
 
 \begin{multicols}{2}
 
-\subsection*{skill}
+\subsection*{Competencies}
 $for(skill)$
--- $skill$\\
+\emph{\#} \enspace $skill$\\
 $endfor$
 
 \columnbreak
 
 \subsection*{Areas of Interest}
 $for(interests)$
--- $interests$\\
+\emph{\#} \enspace $interests$\\
 $endfor$
 
 \end{multicols}
@@ -129,27 +130,31 @@ $endfor$
 
 \begin{multicols}{2}
 
-\subsection*{Education}
+\section*{Education}
 $for(education)$
-\footnotesize{$education.year$}\\
+$education.year$\\
 \emph{$education.institute$}\\
 \textbf{$education.subject$}, $education.degree$\\
+
 $endfor$
 
 \columnbreak
 
-\subsection*{Cerification}
-$for(cerification)$
-\href{$cerification.url$}{$cerification.title$} ($cerification.dates$)\\
-$endfor$
+\section*{Cerification}
 
-\vspace{-5pt}
+\begin{itemize}
+  \setlength\itemsep{-0.5em}
+  \item \href{https://www.redhat.com/rhtapps/certification/verify/?certId=140-054-446}{Red Hat Certified Engineer}
+  \item \href{https://www.redhat.com/rhtapps/certification/verify/?certId=140-054-446}{Red Hat Certified System Administrator}
+\end{itemize}
 
-\subsection*{Languages}
-$for(languages)$
-\emph{$languages.language$} ($languages.proficiency$)\\
-$endfor$
-
+\section*{Languages}
+\begin{itemize}
+  \setlength\itemsep{-0.5em}
+  \item \emph{Polish} (Native)
+  \item \emph{English} (C1)
+  \item \emph{French} (A2)
+\end{itemize}
 
 \end{multicols}
 
@@ -158,31 +163,126 @@ $endfor$
 
 % EXPERIENCE
 
-\section*{Previous Experience}
+\section*{Experience}
 \noindent
-$for(experience)$
-\footnotesize{$experience.years$}\\
-\textsc{$experience.employer$}, \emph{$experience.job$}\\
-$experience.city$\\[.2cm]
-$experience.description$\\\\
-$endfor$
 
+% CERN
+
+\note{04/2015--Present}
+\textbf{\textsc{CERN} (Geneva)}\\
+\emph{System Engineer}
+
+\vspace{10pt}
+(1) \emph{System Administration Modernisation}
+\begin{itemize}
+  \item Support and troubleshooting of over 2000 OpenStack VMs, desktops and servers critical to the operation of CERN accelerators.
+  \item Transformation of an old bash/awk/Python script-based configuration management to a modern Ansible-based solution.
+  \item Replacement of inconsistent/non-existing version controlling of various parts of system configuration with a single git tree.
+  \item Massive analysis, comparison, fixing errors and making more consistent of kickstart files for 2000+ machines (included also changes in PXE servers and generating kickstart files based on Ansible inventory file and CERN's internal sources of data about hosts).
+  \item Implementing a filesystem monitoring system based on auditd, rsyslog, Elasticsearch, Logstash/Logalike and Kibana (dashboards).
+  \item Creating monit configuration for process management and monitoring.
+  \item Developing dozens of Ansible playbooks for configuration of various aspects of OS and applications.
+\end{itemize}
+
+% \vspace{10pt}
 \pagebreak
+(2) \emph{Process Management and Deployment (PoC)}
+\begin{itemize}
+  \item Design and implementation of the platform that could replace the former legacy service management solution,
+  while keeping the interface and release-deploy-configure workflow for users backward compatible.
+  \item Development of Python and Ansible-based tool for:
+  \begin{itemize}
+    \item deployment of the accelerators controls applications;
+    \item adding/removing the services to/from an applications database (to make them persistent across OS reinstallations);
+    \item generating configuration for service monitoring and management (based on monit);
+    \item providing a consistent solution for supplying user specific (monit) checks for a service or group of services.
+  \end{itemize}
+\end{itemize}
 
-% $for(project.tags)$
-% \marginpar{\scriptsize\texttt{{\#$project.tags$}}}
-% $endfor$
+\vspace{10pt}
+(3) \emph{Accelerator Project Exploitation Tools - Tracing}
+\begin{itemize}
+  \item System administration of Elasticsearch/Logalike/Kibana clusters:
+  \begin{itemize}
+    \item upgrade to ES 2.0 and Kibana 4;
+    \item creation of nginx reverse proxy configuration;
+    \item creation of monit configuration and checks for all ELK services;
+    \item writing a Logalike extension in Java 8.
+  \end{itemize}
+\end{itemize}
 
-\section*{Most relevant project}
-\noindent
-$for(project)$
-\footnotesize{$project.years$}\\
-\textbf{\textsc{$project.name$}} @ \emph{$project.occupation$}\\[.2cm]
-$project.description$
 
-\vspace{5pt}
 \noindent\rule[0.5ex]{\linewidth}{1pt}
 
-$endfor$
+% Linux Polska
+\note{02/2014--03/2015}\textbf{\textsc{Linux Polska} (Warsaw)}\\
+\emph{Solution Architect}
+
+\vspace{10pt}
+(1) \href{http://opensourceday.com/}{Open Source Day}
+\begin{itemize}
+  \item Organization of the biggest Open Source event in Poland.
+\end{itemize}
+
+(2) EuroLinux
+\begin{itemize}
+  \item Design and implementation of Automated Delivery Pipeline for building RPM packages (using bash scripts chained into Jenkins' jobs):
+
+  \begin{itemize}
+  \item building RPM packages with open source tools (from Fedora Project):
+  koji, mock, mash/createrepo, revisor/pungi, Sigul;
+  \item maintenance and configuration of Jenkins, GitLab, git repositories, etc;
+  \item development of bash and Python scripts;
+  \item configuration of testing environment based on Vagrant, Packer, RHEV's virtual machines;
+  \item set up of Zabbix monitoring.
+  \end{itemize}
+
+\end{itemize}
+
+
+\noindent\rule[0.5ex]{\linewidth}{1pt}
+
+% IMPAQ
+\note{11/2011--01/2014}\textbf{\textsc{IMPAQ Group} (Warsaw)}\\
+\emph{Software / System Engineer}
+\begin{itemize}
+  \item Support of RHEL/Oracle/Java telco applications for international cellular networks.
+  \item Installation of a OpenStack cluster integrated with a GlusterFS cluster (automated with Chef).
+  \item Development of Chef cookbooks for automatic orchestration of development and testing environments of Java web applications (+Apache Tomcat and Oracle XE 11g).
+  \item Installation, configuration (using Chef) and maintenance of the Hadoop cluster and additional tools.
+  \item Marketing and pre-sales activities for M2M, Cloud Computing and Big Data Business Practice.
+
+  \item Design and implementation of the Linux services infrastructure in mVoip project:
+  \begin{itemize}
+    \item load balancing and HA mode: HAProxy and nginx;
+    \item MySQL Master-Master Semisynchronous Replication cluster and Apache Cassandra cluster.
+    \item Zabbix monitoring and syslog-ng centrallized logging;
+    \item Jira OnDemand administration
+  \end{itemize}
+
+\end{itemize}
+
+% \noindent\rule[0.5ex]{\linewidth}{1pt}
+
+% Outbox
+%\note{07/2011--10/2011}\textbf{\textsc{Outbox} (Warsaw)}\\
+%\emph{Junior Consultant}
+%\begin{itemize}
+%  \item Development of the CRM system based on Oracle PeopleSoft platform for Telekomunikacja Polska SA.
+%\end{itemize}
+
+%\noindent\rule[0.5ex]{\linewidth}{1pt}
+
+% ERSA
+%\note{04/2015--04/2016}\textbf{\textsc{49th ERSA Congress} (Lodz)}\\
+%\emph{Intern}\\
+%Work mostly as a member of IT support and a member of information helpdesk during the Congress.
+
+%\noindent\rule[0.5ex]{\linewidth}{1pt}
+
+% fedorapl.org
+%\note{04/2015--04/2016}\textbf{\textsc{fedorapl.org}}\\
+%\emph{Team member (Voluntary)}\\
+%Development of web portal actively supporting and providing forum, wiki and other facilities for Polish community of Fedora Linux users.
 
 \end{document}

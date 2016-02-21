@@ -2,20 +2,19 @@
 # Settings
 #mainfont: Hoefler Text
 mainfont: "Linux Libertine O"
-fontsize: "10.5pt"
+fontsize: "10pt"
 lang: "English"
 geometry: "a4paper, left=28mm, right=28mm, top=17mm, bottom=17mm"
 
 
 # Personal details
-name: Tomasz Michal Klosinski
+name: Tomasz Klosinski
 address:
-- "Konstancinska 3A"
 - "Warsaw"
 - "Poland"
 phone:
-  # - "+48 796 80 00 73"
   - "+33 755 77 37 37"
+  # - "+48 796 80 00 73"
 email: tomasz.klosinski@protonmail.ch
 # Insert URLs without http://
 linkedin: tklosinski
@@ -25,13 +24,26 @@ gpg:
 
 # Sections
 intro:
-  "I am M.A. graduate of IT (Databases) at Polish-Japanese Academy of Information Technology in Warsaw,
-  B.A. graduate of Computer Science and B.A. graduate of Business Management, both held in English, at University of Lodz.
-  I have been working in the Linux world for the last 4 years and I have been passionate Linux user for over 13 years.
-  My current position is System Engineer in DevOps and Infrastructure team at CERN Control Center."
+  "I am passionate Linux Engineer with 4 years experience in server automation and configuration management.
+  My current position is System Engineer in DevOps and Infrastructure teams at CERN Control Center."
+
+  #I am M.A. graduate of IT (Databases) at Polish-Japanese Academy of Information Technology in Warsaw,
+  #B.A. graduate of Computer Science and B.A. graduate of Business Management, both held in English, at University of Lodz."
+  #I have been working in the Linux world for the last 4 years and I have been passionate Linux user for over 13 years."
+
+skill:
+  - Linux, Bash
+  - Ansible, Python,
+  - Docker, Vagrant, Jenkins
+  - Cloudera Hadoop
+  - OpenStack, Amazon Web Services
+  - Elasticsearch, Logstash, Kibana
+  # - MySQL, PostgreSQL
+  # - Apache HTTPD, nginx, HAProxy
+  # - Nagios, Zabbix, Monit
 
 interests:
-- DevOps, Continuous Delivery
+- Continuous Integration/Delivery
 - Big Data, Cloud Computing, IT Infrastructure
 - Agile Methodologies
 
@@ -84,7 +96,7 @@ education:
 - year: "2010--2012"
   subject: Databases
   degree: M.A.
-  institute: Polish-Japanese Academy of Information Technology (Warsaw)
+  institute: Polish-Japanese Academy of Information Technology
   city: Warsaw
 - year: "2008--2011"
   subject: Business Management
@@ -106,17 +118,6 @@ cerification:
     license: 140-054-446
     url: "https://www.redhat.com/rhtapps/certification/verify/?certId=140-054-446"
     dates: "2014--2017"
-
-
-skill:
-  - Linux (RHEL, CentOS), Bash
-  - Ansible, Python, Vagrant, Chef, Ruby, Jenkins
-  - Cloudera Hadoop
-  - OpenStack, Eucalyptus, Amazon Web Services
-  - Elasticsearch, Logstash, Kibana
-  - MySQL, PostgreSQL
-  - Apache HTTPD, nginx, HAProxy
-  - Nagios, Zabbix, Monit
 
 
 project:
