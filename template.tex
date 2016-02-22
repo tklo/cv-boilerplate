@@ -3,6 +3,11 @@
 
 \documentclass[$fontsize$, a4paper]{article}
 
+\newcommand\textbox[1]{%
+  \parbox{.333\textwidth}{#1}%
+}
+
+
 % LAYOUT
 %--------------------------------
 % Margins
@@ -167,18 +172,15 @@ $endfor$
 \noindent
 
 % CERN
-
-\note{04/2015--Present}
-\textbf{\textsc{CERN} (Geneva)}\\
-\emph{System Engineer}
+\noindent\textbox{\textbf{\textsc{CERN} (Geneva)}\hfill}\textbox{\hfil \emph{System Engineer}\hfil}\textbox{\hfill 04/2015--03/2016}
 
 \vspace{10pt}
-(1) \emph{System Administration Modernisation}
+(1) \emph{System Administration Modernisation Project}
 \begin{itemize}
-  \item Support and troubleshooting of over 2000 OpenStack VMs, desktops and servers critical to the operation of CERN accelerators.
+  \item Support and troubleshooting of over 2800 OpenStack VMs, desktops and servers critical to the operation of CERN accelerators.
   \item Transformation of an old bash/awk/Python script-based configuration management to a modern Ansible-based solution.
-  \item Replacement of inconsistent/non-existing version controlling of various parts of system configuration with a single git tree.
-  \item Massive analysis, comparison, fixing errors and making more consistent of kickstart files for 2000+ machines (included also changes in PXE servers and generating kickstart files based on Ansible inventory file and CERN's internal sources of data about hosts).
+  \item Replacement of inconsistent/non-existing version control of various parts of system configuration with a single git tree.
+  \item Massive analysis, comparison, fixing errors and making more consistent of kickstart files for 2800+ machines (included also changes in PXE servers and generating kickstart files based on Ansible inventory file and CERN's internal sources of data about hosts).
   \item Implementing a filesystem monitoring system based on auditd, rsyslog, Elasticsearch, Logstash/Logalike and Kibana (dashboards).
   \item Creating monit configuration for process management and monitoring.
   \item Developing dozens of Ansible playbooks for configuration of various aspects of OS and applications.
@@ -186,7 +188,7 @@ $endfor$
 
 % \vspace{10pt}
 \pagebreak
-(2) \emph{Process Management and Deployment (PoC)}
+(2) \emph{Process Management and Deployment Project (PoC)}
 \begin{itemize}
   \item Design and implementation of the platform that could replace the former legacy service management solution,
   while keeping the interface and release-deploy-configure workflow for users backward compatible.
@@ -215,16 +217,15 @@ $endfor$
 \noindent\rule[0.5ex]{\linewidth}{1pt}
 
 % Linux Polska
-\note{02/2014--03/2015}\textbf{\textsc{Linux Polska} (Warsaw)}\\
-\emph{Solution Architect}
+\noindent\textbox{\textbf{\textsc{Linux Polska} (Warsaw)}\hfill}\textbox{\hfil \emph{Solution Architect}\hfil}\textbox{\hfill 02/2014--03/2015}
 
 \vspace{10pt}
-(1) \href{http://opensourceday.com/}{Open Source Day}
+(1) \emph{\href{http://opensourceday.com/}{Open Source Day}}
 \begin{itemize}
   \item Organization of the biggest Open Source event in Poland.
 \end{itemize}
 
-(2) EuroLinux
+(2) \emph{EuroLinux Project}
 \begin{itemize}
   \item Design and implementation of Automated Delivery Pipeline for building RPM packages (using bash scripts chained into Jenkins' jobs):
 
@@ -243,8 +244,7 @@ $endfor$
 \noindent\rule[0.5ex]{\linewidth}{1pt}
 
 % IMPAQ
-\note{11/2011--01/2014}\textbf{\textsc{IMPAQ Group} (Warsaw)}\\
-\emph{Software / System Engineer}
+\noindent\textbox{\textbf{\textsc{IMPAQ Group} (Warsaw)}\hfill}\textbox{\hfil \emph{Software / System Engineer}\hfil}\textbox{\hfill 11/2011--01/2014}
 \begin{itemize}
   \item Support of RHEL/Oracle/Java telco applications for international cellular networks.
   \item Installation of a OpenStack cluster integrated with a GlusterFS cluster (automated with Chef).
