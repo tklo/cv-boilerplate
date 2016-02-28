@@ -2,7 +2,7 @@
 * Good employee is passionate employee and I'm very passionate about new Linux technology. I'm Linux desktop user for over 13 years and I've used to run a website for Polish community of Fedora Linux users.
 * I like to read books, learn and experience new things. Currently in my free time I'm enjoying learning French and Python.
 * I have a desire of self-improvement as an entrepreneur and a professional DevOps engineer. I'd like to run a technological start-up one day.
-* I would love to work in an international environment. I have studied in English Computer Science and Business Management in a multi-cultural groups and I have enjoyed it a lot.
+* I would love to work in an international environment. I have studied in English Computer Science and Business Management in a multi-national groups and I have enjoyed it a lot.
 
 
 I am a passionate . I have had experience with Java, C++ and Python programming languages during the course of my studies and my professional career.

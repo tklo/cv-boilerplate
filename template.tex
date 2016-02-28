@@ -80,32 +80,34 @@
 %--------------------------------
 \begin{document}
 
-{\LARGE $name$}\\[.2cm]
-{\large \textsl{DevOps / System Engineer}}\\[.1cm]
-
 % CONTACT
 
 \begin{multicols}{2}
 
-$for(phone)$
-$phone$
-$endfor$
+  {\LARGE $name$}\\[.2cm]
+  {\large \textsl{DevOps / System Engineer}}\\[.1cm]
 
-\href{mailto:$email$}{$email$}\\
+
+% $for(address)$
+% $address$\\
+% $endfor$
+
+% $for(phone)$
+% $phone$
+% $endfor$\\
+% \href{mailto:$email$}{$email$}\\
+% \href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}
 
 \columnbreak
-
-For detailed list of projects visit:\\
-\href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}
-
-% Born: 1987\\
-% Nationality: Polish\\
+\emph{Personal information}\\
+Date of Birth: 1987\\
+Citizenship: Polish\\
 % Martial status: married\\
 
 \end{multicols}
 
 
-% \vspace{10pt}
+% \vspace{5pt}
 
 % INTRO
 % intro
@@ -165,25 +167,26 @@ $endfor$
 
 \vspace{-10pt}
 
-
 % EXPERIENCE
 
 \section*{Experience}
 \noindent
 
 % CERN
-\noindent\textbox{\textbf{\textsc{CERN} (Geneva)}\hfill}\textbox{\hfil \emph{System Engineer}\hfil}\textbox{\hfill 04/2015--03/2016}
+\noindent\textbox{\textbf{\textsc{CERN} (Geneva)}\hfill}\textbox{\hfil \emph{Linux System Engineer}\hfil}\textbox{\hfill 04/2015--03/2016}\\\\
+\textbf{Technology:} Scientific Linux 6 (RHEL6), CentOS 7, Ansible, Bash, Python, auditd, rsyslog, nginx, Monit, Elasticsearch/Logalike/Kibana, git, PXE, kickstart
 
-\vspace{10pt}
+\vspace{5pt}
 (1) \emph{System Administration Modernisation Project}
 \begin{itemize}
+  \item Automated configuration management with Ansible.
   \item Support and troubleshooting of over 2800 OpenStack VMs, desktops and servers critical to the operation of CERN accelerators.
-  \item Transformation of an old bash/awk/Python script-based configuration management to a modern Ansible-based solution.
+  \item Transformation of an old Bash/AWK/Python script-based configuration management to a modern Ansible-based solution.
   \item Replacement of inconsistent/non-existing version control of various parts of system configuration with a single git tree.
-  \item Massive analysis, comparison, fixing errors and making more consistent of kickstart files for 2800+ machines (included also changes in PXE servers and generating kickstart files based on Ansible inventory file and CERN's internal sources of data about hosts).
+  \item Massive analysis, comparison, fixing errors and making more consistent of kickstart files for 2800+ machines (including changes in PXE servers and generating kickstart files based on Ansible inventory file and CERN's internal sources of data about hosts).
   \item Implementing a filesystem monitoring system based on auditd, rsyslog, Elasticsearch, Logstash/Logalike and Kibana (dashboards).
-  \item Creating monit configuration for process management and monitoring.
-  \item Developing dozens of Ansible playbooks for configuration of various aspects of OS and applications.
+  \item Various improvements to process control and monitoring (Monit).
+  \item Development of dozens of Ansible playbooks for configuration of various aspects of OS and applications.
 \end{itemize}
 
 % \vspace{10pt}
@@ -196,30 +199,32 @@ $endfor$
   \begin{itemize}
     \item deployment of the accelerators controls applications;
     \item adding/removing the services to/from an applications database (to make them persistent across OS reinstallations);
-    \item generating configuration for service monitoring and management (based on monit);
-    \item providing a consistent solution for supplying user specific (monit) checks for a service or group of services.
+    \item generating configuration for service monitoring and management (based on Monit);
+    \item providing a consistent solution for supplying user specific (Monit) checks for a service or group of services.
   \end{itemize}
 \end{itemize}
 
-\vspace{10pt}
+\vspace{5pt}
 (3) \emph{Accelerator Project Exploitation Tools - Tracing}
 \begin{itemize}
   \item System administration of Elasticsearch/Logalike/Kibana clusters:
   \begin{itemize}
     \item upgrade to ES 2.0 and Kibana 4;
     \item creation of nginx reverse proxy configuration;
-    \item creation of monit configuration and checks for all ELK services;
+    \item creation of Monit configuration and checks for all ELK services;
     \item writing a Logalike extension in Java 8.
   \end{itemize}
 \end{itemize}
 
 
 \noindent\rule[0.5ex]{\linewidth}{1pt}
+%\vspace{3pt}
 
 % Linux Polska
-\noindent\textbox{\textbf{\textsc{Linux Polska} (Warsaw)}\hfill}\textbox{\hfil \emph{Solution Architect}\hfil}\textbox{\hfill 02/2014--03/2015}
+\noindent\textbox{\textbf{\textsc{Linux Polska} (Warsaw)}\hfill}\textbox{\hfil \emph{Linux Solution Architect}\hfil}\textbox{\hfill 02/2014--03/2015}\\\\
+\textbf{Technology:} RHEL 6, CentOS 7, Jenkins, Bash, Python, Vagrant, Packer, Fedora Koji, Red Hat Satellite Server, Red Hat Enterprise Virtualization, GlusterFS, GitLab, Zabbix
 
-\vspace{10pt}
+\vspace{5pt}
 (1) \emph{\href{http://opensourceday.com/}{Open Source Day}}
 \begin{itemize}
   \item Organization of the biggest Open Source event in Poland.
@@ -242,9 +247,14 @@ $endfor$
 
 
 \noindent\rule[0.5ex]{\linewidth}{1pt}
+%\vspace{3pt}
 
 % IMPAQ
-\noindent\textbox{\textbf{\textsc{IMPAQ Group} (Warsaw)}\hfill}\textbox{\hfil \emph{Software / System Engineer}\hfil}\textbox{\hfill 11/2011--01/2014}
+\noindent\textbox{\textbf{\textsc{IMPAQ Group} (Warsaw)}\hfill}\textbox{\hfil \emph{Linux Software / System Engineer}\hfil}\textbox{\hfill 11/2011--01/2014}\\\\
+\textbf{Technology:} RHEL/CentOS 6, Ubuntu Server, Oracle Database, MySQL, GlusterFS, OpenStack (KVM), Cloudera Hadoop, Chef, HAProxy, nginx, Jenkins, Apache Cassandra, Zabbix, syslog-ng, Jira
+%\textbf{Soft skills:} Business wiriting, Marketing and Pre-sales activities
+
+\vspace{10pt}
 \begin{itemize}
   \item Support of RHEL/Oracle/Java telco applications for international cellular networks.
   \item Installation of a OpenStack cluster integrated with a GlusterFS cluster (automated with Chef).

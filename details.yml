@@ -10,8 +10,8 @@ geometry: "a4paper, left=28mm, right=28mm, top=17mm, bottom=17mm"
 # Personal details
 name: Tomasz Klosinski
 address:
-- "Warsaw"
-- "Poland"
+- "16 Avenue du Jura"
+- "Ferney-Voltaire, France"
 phone:
   - "+33 755 77 37 37"
   # - "+48 796 80 00 73"
@@ -32,10 +32,11 @@ intro:
   #I have been working in the Linux world for the last 4 years and I have been passionate Linux user for over 13 years."
 
 skill:
-  - Linux, Bash
-  - Ansible, Python,
+  - Linux (Red Hat Enteprise Linux, CentOS, Ubuntu)
+  - Bash, Python
+  - Ansible, Chef
   - Docker, Vagrant, Jenkins
-  - Cloudera Hadoop
+  # - Cloudera Hadoop
   - OpenStack, Amazon Web Services
   - Elasticsearch, Logstash, Kibana
   # - MySQL, PostgreSQL
@@ -43,6 +44,7 @@ skill:
   # - Nagios, Zabbix, Monit
 
 interests:
+- Automated Configuration Management
 - Continuous Integration/Delivery
 - Big Data, Cloud Computing, IT Infrastructure
 - Agile Methodologies
