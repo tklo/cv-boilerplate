@@ -1,7 +1,7 @@
 ---
 # Settings
-#mainfont: Hoefler Text
-mainfont: "Linux Libertine O"
+mainfont: Hoefler Text
+# mainfont: "Linux Libertine O"
 fontsize: "10pt"
 lang: "English"
 geometry: "a4paper, left=28mm, right=28mm, top=17mm, bottom=17mm"
@@ -10,11 +10,10 @@ geometry: "a4paper, left=28mm, right=28mm, top=17mm, bottom=17mm"
 # Personal details
 name: Tomasz Klosinski
 address:
-- "16 Avenue du Jura"
-- "Ferney-Voltaire, France"
+- "Not valid"
+- "Anymore"
 phone:
-  - "+33 755 77 37 37"
-  # - "+48 796 80 00 73"
+  - "+41 79 435 75 71"
 email: tomasz.klosinski@protonmail.ch
 # Insert URLs without http://
 linkedin: tklosinski
@@ -24,29 +23,30 @@ gpg:
 
 # Sections
 intro:
-  "I am a passionate Linux Engineer with 4 years experience in server automation and configuration management.
-  My current position is System Engineer in DevOps and Infrastructure teams at CERN Control Center."
-
-  #I am M.A. graduate of IT (Databases) at Polish-Japanese Academy of Information Technology in Warsaw,
-  #B.A. graduate of Computer Science and B.A. graduate of Business Management, both held in English, at University of Lodz."
-  #I have been working in the Linux world for the last 4 years and I have been passionate Linux user for over 13 years."
+  "My main professional objective is to learn and develop skills, improve my craftsmanship, to build agile, reliable, scalable and automated infrastructure stacks. My core values are professionalism, continuous learning and team work. I believe that they are the cornerstone of any successful and sustainable organisation."
 
 skill:
-  - Linux (Red Hat Enteprise Linux, CentOS, Ubuntu)
-  - Bash, Python
+  - Red Hat Enteprise Linux, CentOS Linux
+  - Bash and Python scripting
   - Ansible, Chef
-  - Docker, Vagrant, Jenkins
-  # - Cloudera Hadoop
+  - Elasticsearch, Logstash/Beats, Kibana
+  - Cassandra
+  - KairosDB, Fluentd, Grafana
+  - Docker, Kubernetes
+  - Jenkins, Travis CI
+  - HashiCorp stack
   - OpenStack, Amazon Web Services
-  - Elasticsearch, Logstash, Kibana
   # - MySQL, PostgreSQL
   # - Apache HTTPD, nginx, HAProxy
   # - Nagios, Zabbix, Monit
 
 interests:
+- Open Source Technology
+- Software Engineering
 - Automated Configuration Management
-- Continuous Integration/Delivery
-- Big Data, Cloud Computing, IT Infrastructure
+- Monitoring, Time-Series Metrics
+- Continuous Delivery
+- Cloud Computing, IT Infrastructure
 - Agile Methodologies
 
 languages:
@@ -54,10 +54,23 @@ languages:
   proficiency: Native
 - language: English
   proficiency: C1
-- language: French
-  proficiency: B1
+- language: German
+  proficiency: A2
 
 experience:
+- years: "2016--2017"
+  employer: Flynt Bank AG
+  job: Senior DevOps Engineer
+  city: Zug
+  description:
+    "At Flynt I have worked on:
+- Building a logging and tracing/metrics collection system based on Elasticsearch/Fluentd/Kibana and Cassandra/KairosDB/Fluentd/Grafana and auditing system based on auditd.
+- Automation of VMs provisioning (VMware), bootstrapping CentOS 7 system configuration and deploying services and applications on top of them
+- Developing ~100 Ansible roles for Linux services like Cassandra, Elasticsearch, HAProxy and Nginx load balancers and our scala/akka-based banking/financial applications.
+- Designing and implementing a package delivery workflow - from fetching jars from Nexus and Ansible code from GitLab to deploying a new version on multi-staged environments.
+- Interviewing new DevOps candidates."
+
+
 - years: "2015--2016"
   employer: CERN
   job: Project Associate

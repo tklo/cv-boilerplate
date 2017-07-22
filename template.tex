@@ -82,11 +82,10 @@
 
 % CONTACT
 
-\begin{multicols}{2}
-
   {\LARGE $name$}\\[.2cm]
-  {\large \textsl{DevOps / System Engineer}}\\[.1cm]
+  {\large \textsl{DevOps / Site Reliability Engineer}}\\[.1cm]
 
+\begin{multicols}{2}
 
 % $for(address)$
 % $address$\\
@@ -95,24 +94,28 @@
 % $for(phone)$
 % $phone$
 % $endfor$\\
-% \href{mailto:$email$}{$email$}\\
-% \href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}
+
+\vspace{15pt}
+\emph{Personal information}\\
+Citizenship: Polish\\
+Swiss Permit: B
 
 \columnbreak
-\emph{Personal information}\\
-Date of Birth: 1987\\
-Citizenship: Polish\\
-% Martial status: married\\
+
+\vspace{15pt}
+\emph{Contact}\\
+\href{mailto:$email$}{$email$}\\
+\href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}
 
 \end{multicols}
 
 
-% \vspace{5pt}
+% \vspace{25pt}
 
 % INTRO
-% intro
+$intro$
 
-% \vspace{5pt}
+% \vspace{25pt}
 
 % SKILLS
 
@@ -160,7 +163,7 @@ $endfor$
   \setlength\itemsep{-0.5em}
   \item \emph{Polish} (Native)
   \item \emph{English} (C1)
-  \item \emph{French} (A2)
+  \item \emph{German} (B1)
 \end{itemize}
 
 \end{multicols}
@@ -172,6 +175,24 @@ $endfor$
 \section*{Experience}
 \noindent
 
+% Flynt Bank AG
+\noindent\textbox{\textbf{\textsc{Flynt Bank AG} (Zug)}\hfill}\textbox{\hfil \emph{Senior DevOps Engineer}\hfil}\textbox{\hfill 05/2016--Present}\\\\
+\textbf{Technology:} CentOS 7, FreeBSD, Ansible, Cassandra, Elasticsearch, Fluentd, Kibana, KairosDB, Grafana
+
+\vspace{5pt}
+\begin{itemize}
+  \item Building a logging and tracing/metrics collection system based on Elasticsearch/Fluentd/Kibana and Cassandra/KairosDB/Fluentd/Grafana and auditing system based on auditd.
+  \item Automation of VMs provisioning (VMware), bootstrapping CentOS 7 system configuration and deploying services and applications on top of them
+  \item Developing ~100 Ansible roles for Linux services like Cassandra, Elasticsearch, HAProxy and Nginx load balancers and our scala/akka-based banking/financial applications.
+  \item Designing and implementing a package delivery workflow - from fetching jars from Nexus and Ansible code from GitLab to deploying a new version on multi-staged environments.
+  \item Management of FreeBSD PF-based firewalls and routers.
+  \item Interviewing new DevOps candidates.
+\end{itemize}
+
+
+\noindent\rule[0.5ex]{\linewidth}{1pt}
+%\vspace{3pt}
+
 % CERN
 \noindent\textbox{\textbf{\textsc{CERN} (Geneva)}\hfill}\textbox{\hfil \emph{Linux System Engineer}\hfil}\textbox{\hfill 04/2015--03/2016}\\\\
 \textbf{Technology:} Scientific Linux 6 (RHEL6), CentOS 7, Ansible, Bash, Python, auditd, rsyslog, nginx, Monit, Elasticsearch/Logalike/Kibana, git, PXE, kickstart
@@ -179,41 +200,29 @@ $endfor$
 \vspace{5pt}
 (1) \emph{System Administration Modernisation Project}
 \begin{itemize}
-  \item Automated configuration management with Ansible.
+  \item Development of automated configuration management with Ansible.
   \item Support and troubleshooting of over 2800 OpenStack VMs, desktops and servers critical to the operation of CERN accelerators.
   \item Transformation of an old Bash/AWK/Python script-based configuration management to a modern Ansible-based solution.
   \item Replacement of inconsistent/non-existing version control of various parts of system configuration with a single git tree.
   \item Massive analysis, comparison, fixing errors and making more consistent of kickstart files for 2800+ machines (including changes in PXE servers and generating kickstart files based on Ansible inventory file and CERN's internal sources of data about hosts).
   \item Implementing a filesystem monitoring system based on auditd, rsyslog, Elasticsearch, Logstash/Logalike and Kibana (dashboards).
-  \item Various improvements to process control and monitoring (Monit).
-  \item Development of dozens of Ansible playbooks for configuration of various aspects of OS and applications.
+  \item Various improvements to process control and monitoring of services (Monit).
 \end{itemize}
 
 % \vspace{10pt}
-\pagebreak
 (2) \emph{Process Management and Deployment Project (PoC)}
 \begin{itemize}
   \item Design and implementation of the platform that could replace the former legacy service management solution,
   while keeping the interface and release-deploy-configure workflow for users backward compatible.
-  \item Development of Python and Ansible-based tool for:
-  \begin{itemize}
-    \item deployment of the accelerators controls applications;
-    \item adding/removing the services to/from an applications database (to make them persistent across OS reinstallations);
-    \item generating configuration for service monitoring and management (based on Monit);
-    \item providing a consistent solution for supplying user specific (Monit) checks for a service or group of services.
-  \end{itemize}
+  \item Development of Python and Ansible-based tool for deployment of the accelerators controls applications. The tool included a database to make the applications persistent across OS reinstallations. It also generated configuration for service monitoring and management based on Monit. User of the tool could provide his own specific Monit checks for a service or group of services.
 \end{itemize}
 
 \vspace{5pt}
 (3) \emph{Accelerator Project Exploitation Tools - Tracing}
 \begin{itemize}
   \item System administration of Elasticsearch/Logalike/Kibana clusters:
-  \begin{itemize}
-    \item upgrade to ES 2.0 and Kibana 4;
-    \item creation of nginx reverse proxy configuration;
-    \item creation of Monit configuration and checks for all ELK services;
-    \item writing a Logalike extension in Java 8.
-  \end{itemize}
+  \item Creation of Monit configuration and checks for all ELK services;
+  \item Development of Logalike extensions in Java.
 \end{itemize}
 
 
@@ -232,17 +241,7 @@ $endfor$
 
 (2) \emph{EuroLinux Project}
 \begin{itemize}
-  \item Design and implementation of Automated Delivery Pipeline for building RPM packages (using bash scripts chained into Jenkins' jobs):
-
-  \begin{itemize}
-  \item building RPM packages with open source tools (from Fedora Project):
-  koji, mock, mash/createrepo, revisor/pungi, Sigul;
-  \item maintenance and configuration of Jenkins, GitLab, git repositories, etc;
-  \item development of bash and Python scripts;
-  \item configuration of testing environment based on Vagrant, Packer, RHEV's virtual machines;
-  \item set up of Zabbix monitoring.
-  \end{itemize}
-
+  \item Design and implementation of Automated Delivery Pipeline for building RPM packages (using bash scripts chained into Jenkins' jobs).
 \end{itemize}
 
 
@@ -258,18 +257,6 @@ $endfor$
 \begin{itemize}
   \item Support of RHEL/Oracle/Java telco applications for international cellular networks.
   \item Installation of a OpenStack cluster integrated with a GlusterFS cluster (automated with Chef).
-  \item Development of Chef cookbooks for automatic orchestration of development and testing environments of Java web applications (+Apache Tomcat and Oracle XE 11g).
-  \item Installation, configuration (using Chef) and maintenance of the Hadoop cluster and additional tools.
-  \item Marketing and pre-sales activities for M2M, Cloud Computing and Big Data Business Practice.
-
-  \item Design and implementation of the Linux services infrastructure in mVoip project:
-  \begin{itemize}
-    \item load balancing and HA mode: HAProxy and nginx;
-    \item MySQL Master-Master Semisynchronous Replication cluster and Apache Cassandra cluster.
-    \item Zabbix monitoring and syslog-ng centrallized logging;
-    \item Jira OnDemand administration
-  \end{itemize}
-
 \end{itemize}
 
 % \noindent\rule[0.5ex]{\linewidth}{1pt}
