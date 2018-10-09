@@ -113,7 +113,7 @@ Swiss Permit: B
 % \vspace{25pt}
 
 % INTRO
-$intro$
+% intro
 
 % \vspace{25pt}
 
@@ -175,8 +175,30 @@ $endfor$
 \section*{Experience}
 \noindent
 
+% Nectar Financial AG
+\noindent\textbox{\textbf{\textsc{Nectar Financial AG}}\hfill}\textbox{\hfil \emph{Senior DevOps Engineer}\hfil}\textbox{\hfill 01/2018--Present}\\\\
+\textbf{Technology:} Ubuntu, Ansible, Docker, Node.js, Couchbase, Elasticsearch, Redis, ELK, Prometheus+Grafana
+
+\vspace{5pt}
+\begin{itemize}
+  \item Upgrading and refactoring docker-based CI workflow (CircleCi v2)
+  \item Maintaining Docker images (Dockerfiles), Docker Compose files and Docker Swarm clusters
+  \item Refactoring Docker Compose stack files to support multiple versions for multiple environments
+  \item Automating deployments from Github via CircleCI building/testing via Docker Hub images repo to Docker Swarm dev/stage/prod clusters
+  \item Building ELK logging stack with Kibana dashboards
+  \item Building Prometheus-based monitoring and performance metrics collection and Grafana dashboards visualisations for Node apps, RabbitMQ, Elasticsearch, Redis
+  \item Managing Exoscale VMs, AWS services and physical servers in a local datacenter with Ansible using Infrastructure as a Code paradigm
+  \item Building monitoring based on Datadog for a Python-based application with frontend served on AWS S3
+  \item Managing services: Github, Docker Hub, Exoscale, AWS, CircleCI, Slack (deployment and monitoring notifications), domain names, Let's encrypt certificates
+
+\end{itemize}
+
+
+\noindent\rule[0.5ex]{\linewidth}{1pt}
+%\vspace{3pt}
+
 % Flynt Bank AG
-\noindent\textbox{\textbf{\textsc{Flynt Bank AG} (Zug)}\hfill}\textbox{\hfil \emph{Senior DevOps Engineer}\hfil}\textbox{\hfill 05/2016--Present}\\\\
+\noindent\textbox{\textbf{\textsc{Flynt Bank AG}}\hfill}\textbox{\hfil \emph{Senior DevOps Engineer}\hfil}\textbox{\hfill 05/2016--11/2017}\\\\
 \textbf{Technology:} CentOS 7, FreeBSD, Ansible, Cassandra, Elasticsearch, Fluentd, Kibana, KairosDB, Grafana
 
 \vspace{5pt}
@@ -194,7 +216,7 @@ $endfor$
 %\vspace{3pt}
 
 % CERN
-\noindent\textbox{\textbf{\textsc{CERN} (Geneva)}\hfill}\textbox{\hfil \emph{System Engineer (Project Associate)}\hfil}\textbox{\hfill 04/2015--03/2016}\\\\
+\noindent\textbox{\textbf{\textsc{CERN}}\hfill}\textbox{\hfil \emph{System Engineer (Project Associate)}\hfil}\textbox{\hfill 04/2015--03/2016}\\\\
 \textbf{Technology:} Scientific Linux 6 (RHEL6), CentOS 7, Ansible, Bash, Python, auditd, rsyslog, nginx, Monit, Elasticsearch/Logalike/Kibana, git, PXE, kickstart
 
 \vspace{5pt}
@@ -203,25 +225,15 @@ $endfor$
   \item Development of automated configuration management with Ansible.
   \item Support and troubleshooting of over 2800 OpenStack VMs, desktops and servers critical to the operation of CERN accelerators.
   \item Transformation of an old Bash/AWK/Python script-based configuration management to a modern Ansible-based solution.
-  \item Replacement of inconsistent/non-existing version control of various parts of system configuration with a single git tree.
   \item Massive analysis, comparison, fixing errors and making more consistent of kickstart files for 2800+ machines (including changes in PXE servers and generating kickstart files based on Ansible inventory file and CERN's internal sources of data about hosts).
   \item Implementing a filesystem monitoring system based on auditd, rsyslog, Elasticsearch, Logstash/Logalike and Kibana (dashboards).
   \item Various improvements to process control and monitoring of services (Monit).
 \end{itemize}
 
-% \vspace{10pt}
-(2) \emph{Process Management and Deployment Project (PoC)}
-\begin{itemize}
-  \item Design and implementation of the platform that could replace the former legacy service management solution,
-  while keeping the interface and release-deploy-configure workflow for users backward compatible.
-  \item Development of Python and Ansible-based tool for deployment of the accelerators controls applications. The tool included a database to make the applications persistent across OS reinstallations. It also generated configuration for service monitoring and management based on Monit. User of the tool could provide his own specific Monit checks for a service or group of services.
-\end{itemize}
-
 \vspace{5pt}
-(3) \emph{Accelerator Project Exploitation Tools - Tracing}
+(2) \emph{Accelerator Project Exploitation Tools - Tracing}
 \begin{itemize}
   \item System administration of Elasticsearch/Logalike/Kibana clusters:
-  \item Creation of Monit configuration and checks for all ELK services;
   \item Development of Logalike extensions in Java.
 \end{itemize}
 
@@ -230,18 +242,16 @@ $endfor$
 %\vspace{3pt}
 
 % Linux Polska
-\noindent\textbox{\textbf{\textsc{Linux Polska} (Warsaw)}\hfill}\textbox{\hfil \emph{Solution Architect}\hfil}\textbox{\hfill 02/2014--03/2015}\\\\
+\noindent\textbox{\textbf{\textsc{Linux Polska}}\hfill}\textbox{\hfil \emph{Solution Architect}\hfil}\textbox{\hfill 02/2014--03/2015}\\\\
 \textbf{Technology:} RHEL 6, CentOS 7, Jenkins, Bash, Python, Vagrant, Packer, Fedora Koji, Red Hat Satellite Server, Red Hat Enterprise Virtualization, GlusterFS, GitLab, Zabbix
 
 \vspace{5pt}
-(1) \emph{\href{http://opensourceday.com/}{Open Source Day}}
 \begin{itemize}
-  \item Organization of the biggest Open Source event in Poland.
+  \item \emph{\href{http://opensourceday.com/}{Open Source Day}}: Organization of the biggest Open Source event in Poland.
 \end{itemize}
 
-(2) \emph{EuroLinux Project}
 \begin{itemize}
-  \item Design and implementation of Automated Delivery Pipeline for building RPM packages (using bash scripts chained into Jenkins' jobs).
+  \item \emph{EuroLinux Project}: Design and implementation of Automated Delivery Pipeline for building RPM packages (using bash scripts chained into Jenkins' jobs).
 \end{itemize}
 
 
@@ -249,7 +259,7 @@ $endfor$
 %\vspace{3pt}
 
 % IMPAQ
-\noindent\textbox{\textbf{\textsc{IMPAQ Group} (Warsaw)}\hfill}\textbox{\hfil \emph{Software / System Engineer}\hfil}\textbox{\hfill 11/2011--01/2014}\\\\
+\noindent\textbox{\textbf{\textsc{IMPAQ Group}}\hfill}\textbox{\hfil \emph{Software / System Engineer}\hfil}\textbox{\hfill 11/2011--01/2014}\\\\
 \textbf{Technology:} RHEL/CentOS 6, Ubuntu Server, Oracle Database, MySQL, GlusterFS, OpenStack (KVM), Cloudera Hadoop, Chef, HAProxy, nginx, Jenkins, Apache Cassandra, Zabbix, syslog-ng, Jira
 %\textbf{Soft skills:} Business wiriting, Marketing and Pre-sales activities
 

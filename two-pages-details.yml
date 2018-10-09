@@ -3,7 +3,7 @@
 #mainfont: Hoefler Text
 mainfont: Linux Libertine O
 fontsize: 8pt
-lang: English
+lang: en-US
 geometry: a4paper, left=28mm, right=28mm, top=17mm, bottom=17mm
 
 
