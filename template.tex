@@ -82,115 +82,159 @@
 
 % CONTACT
 
-  {\LARGE $name$}\\[.2cm]
-  {\large \textsl{DevOps / Site Reliability Engineer}}\\[.1cm]
+{\LARGE $name$}\\[.2cm]
+{\large \textsl{DevOps / SRE / Platform Engineer}}\\[.1cm]
 
 \begin{multicols}{2}
 
-% $for(address)$
-% $address$\\
-% $endfor$
 
-% $for(phone)$
-% $phone$
-% $endfor$\\
-
-\vspace{15pt}
-\emph{Personal information}\\
+% \vspace{5pt}
+% \emph{Personal information}\\
 Citizenship: Polish\\
-Swiss Permit: B
+Swiss Permit: B\\
+Address: Talacherstrasse 22, 6340 Baar
 
 \columnbreak
 
-\vspace{15pt}
-\emph{Contact}\\
+% \vspace{5pt}
+% \emph{Contact}\\
+$phone$\\
 \href{mailto:$email$}{$email$}\\
-\href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}
+\href{http://linkedin.com/in/$linkedin$}{linkedin.com/in/$linkedin$}\\
 
 \end{multicols}
 
 
-% \vspace{25pt}
+% % SKILLS
 
-% INTRO
-% intro
+% \begin{multicols}{2}
 
-% \vspace{25pt}
+% \subsection*{\emph{Competencies}}
+% \begin{itemize}
+%   \setlength\itemsep{-0.5em}
+%   $for(skill)$
+%     \item $skill$
+%   $endfor$
+% \end{itemize}
 
-% SKILLS
+% \columnbreak
 
-\begin{multicols}{2}
+% \subsection*{\emph{Areas of Interest}}
+% \begin{itemize}
+%   \setlength\itemsep{-0.5em}
+%   $for(interests)$
+%     \item $interests$
+%   $endfor$
+% \end{itemize}
 
-\subsection*{Competencies}
-$for(skill)$
-\emph{\#} \enspace $skill$\\
-$endfor$
+% \end{multicols}
 
-\columnbreak
 
-\subsection*{Areas of Interest}
-$for(interests)$
-\emph{\#} \enspace $interests$\\
-$endfor$
-
-\end{multicols}
+% % \vspace{3pt}
 
 
 % EDUCATION
 
 \begin{multicols}{2}
 
-\section*{Education}
-$for(education)$
-$education.year$\\
-\emph{$education.institute$}\\
-\textbf{$education.subject$}, $education.degree$\\
-
-$endfor$
-
-\columnbreak
-
-\section*{Certification}
-
-\begin{itemize}
+  \section*{Education}
   \setlength\itemsep{-0.5em}
-  \item \href{https://www.redhat.com/rhtapps/certification/verify/?certId=140-054-446}{Red Hat Certified Engineer}
-  \item \href{https://www.redhat.com/rhtapps/certification/verify/?certId=140-054-446}{Red Hat Certified System Administrator}
-\end{itemize}
+  $for(education)$
+  $education.year$\\
+  \emph{$education.institute$}\\
+  \textbf{$education.subject$}, $education.degree$\\
+  
+  $endfor$
+  
+  \columnbreak
+  
+  \section*{Certification}
+  
+  \begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item \href{https://github.com/TomaszKlosinski/kodilla-python-testing/blob/main/Certificate/EN_Tomasz%20K%C5%82osi%C5%84ski%20Certificate.pdf}{Kodilla Bootcamp Test automation in Python}
+    \item \href{https://github.com/TomaszKlosinski/kodilla-django/blob/main/Certificates/EN_Tomasz%20K%C5%82osi%C5%84ski%20Certificate.pdf}{Kodilla Bootcamp Web applications with the Django framework in Python}
+    \item \href{https://github.com/TomaszKlosinski/kodilla-python-bootcamp/blob/main/Certificate/EN_Tomasz%20K%C5%82osi%C5%84ski%20Certificate.pdf}{Kodilla Bootcamp Python Developer}
+    \item \href{https://www.redhat.com/rhtapps/certification/verify/?certId=140-054-446}{Red Hat Certified Engineer}
+    \item \href{https://www.redhat.com/rhtapps/certification/verify/?certId=140-054-446}{Red Hat Certified System Administrator}
+  \end{itemize}
+  
+  \section*{Languages}
+  \begin{itemize}
+    \setlength\itemsep{-0.5em}
+    \item \emph{Polish} (Native)
+    \item \emph{English} (C1)
+    \item \emph{German} (B1 - Goethe-Zertifikat)
+  \end{itemize}
+  
+  \end{multicols}
+  
+  
+  % \vspace{5pt}  
+  
+  % % INTRO/OUTRO
+  
+  % \emph{About me}\\
+  % I have nearly 15 years of professional experience in building and managing Linux and Open-Source-oriented Infrastructure. My primary goal is continuous learning and skill development to excel in crafting agile, secure, reliable, scalable, and automated infrastructure stacks. I approach projects with a professional mindset, emphasizing continuous and shared learning. I strongly believe in the power of teamwork to achieve common goals effectively, efficiently, and sustainably.\\ 
+  
+  % In the future, I aim to advance my career at the crossroads of Development and Operations, with a particular focus on Cloud-Native solutions and Python programming.
+  
+  % \vspace{3pt}
 
-\section*{Languages}
-\begin{itemize}
-  \setlength\itemsep{-0.5em}
-  \item \emph{Polish} (Native)
-  \item \emph{English} (C1)
-  \item \emph{German} (B1)
-\end{itemize}
-
-\end{multicols}
-
-\vspace{-10pt}
 
 % EXPERIENCE
 
 \section*{Experience}
 \noindent
 
-% Nectar Financial AG
-\noindent\textbox{\textbf{\textsc{Nectar Financial AG}}\hfill}\textbox{\hfil \emph{Senior DevOps Engineer}\hfil}\textbox{\hfill 01/2018--Present}\\\\
-\textbf{Technology:} Ubuntu, Ansible, Docker, Node.js, Couchbase, Elasticsearch, Redis, ELK, Prometheus+Grafana
+% Move Digital AG
+\noindent\textbox{\textbf{\textsc{Move Digital AG}}\hfill}\textbox{\hfil \emph{Senior DevOps Engineer}\hfil}\textbox{\hfill 11/2019--Present}\\\\
+\textbf{\textit{Technologies:}} Kubernetes, Python, GitHub Actions, Prometheus+Grafana, Ansible, AWS, GCP, Azure
 
 \vspace{5pt}
+(1) \emph{Cloud Engineering}
 \begin{itemize}
-  \item Upgrading and refactoring docker-based CI workflow (CircleCi v2)
-  \item Maintaining Docker images (Dockerfiles), Docker Compose files and Docker Swarm clusters
-  \item Refactoring Docker Compose stack files to support multiple versions for multiple environments
-  \item Automating deployments from Github via CircleCI building/testing via Docker Hub images repo to Docker Swarm dev/stage/prod clusters
-  \item Building ELK logging stack with Kibana dashboards
-  \item Building Prometheus-based monitoring and performance metrics collection and Grafana dashboards visualisations for Node apps, RabbitMQ, Elasticsearch, Redis
-  \item Managing Exoscale VMs, AWS services and physical servers in a local datacenter with Ansible using Infrastructure as a Code paradigm
-  \item Building monitoring based on Datadog for a Python-based application with frontend served on AWS S3
-  \item Managing services: Github, Docker Hub, Exoscale, AWS, CircleCI, Slack (deployment and monitoring notifications), domain names, Let's encrypt certificates
+  \setlength\itemsep{0em}
+  \item Building Cloud-Native infrastructure stacks: on-prem and managed Kubernetes clusters integrated with Canal, Traefik (Ingress), Rook/Ceph, cert-manager, MetalLB, etc
+  \item Developing Kubernetes Operators (Kopf) and Webhooks (Flask) in Python
+  \item Modernising CI/CD piepelines: GitHub Actions autoscaled on-demand on EC2 using AWS Lambda
+  \item Implementing Monitoring/Observability/Logging stack: Prometheus, Grafana and Loki
+  \item Desining Secrets infrastructure: HashiCorp Vault with Kubernetes integration for secrets retrieval
+  \item Working on Hybrid/Multi-Cloud setups across our Datacenters and GCP, AWS, and Azure (with configuration management based on Terraform)
+  \item Migration of 100+ services to Kubernetes: Java, Python, React apps, Redis, RabbitMQ, Jupyter, Keycloak, MinIO, ArangoDB, Jenkins instances, etc
+  \item Coaching our teams of 50+ developers in Cloud-Native technologies
+\end{itemize}
 
+% \vspace{3pt}
+(2) \emph{DevOps Engineering}
+\begin{itemize}
+  \setlength\itemsep{0em}
+  \item Working on \textit{DevOps Cockpit}, our Python/Flask-based Portal for managing infrastructure resources: KVM VMs, Postfix mail servers, BIND servers, LDAP users/groups, etc
+  \item Development of Ansible modules in Python
+  \item Establishing DevOps code end-to-end automated testing (Molecule/TestInfra/Github Actions)
+  \item Promoting modern Software Engineering principles (TDD, SOLID, Clean Code development)
+  \item Making base infrastructure centralized, maintainable, reproducible across multiple platforms and environments with Ansible, and management of its core components: HAProxy, OpenVPN, Wireguard, IPSec tunnels, OpenLDAP, BIND, KVM, etc
+  \item Support of our 2 interconnected datacentes, 40 physical servers, 200 VMs, 4 Kubernetes clusters with 1000 Kubernetes workloads and 2000 pods
+\end{itemize}
+
+
+% \noindent\rule[0.5ex]{\linewidth}{1pt}
+\pagebreak
+%\vspace{3pt}
+
+
+% Nectar Financial AG
+\noindent\textbox{\textbf{\textsc{Nectar Financial AG}}\hfill}\textbox{\hfil \emph{Senior DevOps Engineer}\hfil}\textbox{\hfill 01/2018--02/2019}\\\\
+\textbf{\textit{Technologies:}} Ansible, Docker, Couchbase, Elasticsearch, Redis, Prometheus+Grafana
+
+\vspace{1pt}
+\begin{itemize}
+  \setlength\itemsep{-0.2em}
+  \item Developing docker-based CI/CD workflows (CircleCi v2) to automate deployments to Docker Swarm dev/stage/prod clusters
+  \item Building logging infrastructure based on ELK stack 
+  \item Developing Monitoring/Observability stacks for two teams: (1) Prometheus and Grafana for Node apps, RabbitMQ, Elasticsearch, Redis (2) Datadog for a Python applications and AWS resources
+  \item Managing Cloud (Exoscale) VMs, AWS services, and physical servers in our local datacenter with Ansible
+  \item Managing Infrastructure: Github repos, Docker Hub, Dockerfiles, Docker Compose files, Docker Swarm clusters, Exoscale \& AWS resources, CircleCI, Slack notifications, domains and Let's encrypt certificates
 \end{itemize}
 
 
@@ -199,42 +243,38 @@ $endfor$
 
 % Flynt Bank AG
 \noindent\textbox{\textbf{\textsc{Flynt Bank AG}}\hfill}\textbox{\hfil \emph{Senior DevOps Engineer}\hfil}\textbox{\hfill 05/2016--11/2017}\\\\
-\textbf{Technology:} CentOS 7, FreeBSD, Ansible, Cassandra, Elasticsearch, Fluentd, Kibana, KairosDB, Grafana
+\textbf{\textit{Technologies:}} Ansible, Cassandra, Elasticsearch, Fluentd, Kibana, KairosDB, Grafana
 
-\vspace{5pt}
+\vspace{1pt}
 \begin{itemize}
-  \item Building a logging and tracing/metrics collection system based on Elasticsearch/Fluentd/Kibana and Cassandra/KairosDB/Fluentd/Grafana and auditing system based on auditd.
-  \item Automation of VMs provisioning (VMware), bootstrapping CentOS 7 system configuration and deploying services and applications on top of them
-  \item Developing ~100 Ansible roles for Linux services like Cassandra, Elasticsearch, HAProxy and Nginx load balancers and our scala/akka-based banking/financial applications.
-  \item Designing and implementing a package delivery workflow - from fetching jars from Nexus and Ansible code from GitLab to deploying a new version on multi-staged environments.
-  \item Management of FreeBSD PF-based firewalls and routers.
-  \item Interviewing new DevOps candidates.
+  \setlength\itemsep{-0.2em}
+  \item Building a logging and tracing/metrics collection system based on Elasticsearch/Fluentd/Kibana and Cassandra/KairosDB/Fluentd/Grafana
+  \item Automation with Ansible of VMs provisioning (VMware), bootstrapping CentOS system configuration, and deployment of services and applications
+  \item Developing 100+ Ansible roles for Linux services like Cassandra, Elasticsearch, HAProxy and Nginx load balancers and our scala/akka-based banking/financial applications
+  \item Designing and implementing a package delivery workflow - from fetching jars from Nexus and Ansible code from GitLab to deploying a new version on multi-staged environments
+  \item Management of FreeBSD PF-based firewalls and routers
+  \item Interviewing new DevOps candidates
 \end{itemize}
 
 
 \noindent\rule[0.5ex]{\linewidth}{1pt}
-%\vspace{3pt}
+
+% \vspace{3pt}
 
 % CERN
 \noindent\textbox{\textbf{\textsc{CERN}}\hfill}\textbox{\hfil \emph{System Engineer (Project Associate)}\hfil}\textbox{\hfill 04/2015--03/2016}\\\\
-\textbf{Technology:} Scientific Linux 6 (RHEL6), CentOS 7, Ansible, Bash, Python, auditd, rsyslog, nginx, Monit, Elasticsearch/Logalike/Kibana, git, PXE, kickstart
+\textbf{\textit{Technologies:}} Ansible, Bash, Python, Java, auditd, Monit, ELK stack, PXE, kickstart
 
-\vspace{5pt}
-(1) \emph{System Administration Modernisation Project}
+\vspace{1pt}
 \begin{itemize}
-  \item Development of automated configuration management with Ansible.
-  \item Support and troubleshooting of over 2800 OpenStack VMs, desktops and servers critical to the operation of CERN accelerators.
-  \item Transformation of an old Bash/AWK/Python script-based configuration management to a modern Ansible-based solution.
-  \item Massive analysis, comparison, fixing errors and making more consistent of kickstart files for 2800+ machines (including changes in PXE servers and generating kickstart files based on Ansible inventory file and CERN's internal sources of data about hosts).
-  \item Implementing a filesystem monitoring system based on auditd, rsyslog, Elasticsearch, Logstash/Logalike and Kibana (dashboards).
-  \item Various improvements to process control and monitoring of services (Monit).
-\end{itemize}
-
-\vspace{5pt}
-(2) \emph{Accelerator Project Exploitation Tools - Tracing}
-\begin{itemize}
-  \item System administration of Elasticsearch/Logalike/Kibana clusters:
-  \item Development of Logalike extensions in Java.
+  \setlength\itemsep{-0.2em}
+  \item Development of configuration management system with Ansible for almost 2800+ servers critical to the operation of CERN accelerators (including LHC)
+  \item Migration of Bash/AWK/Python-scripts-based configuration to Ansible
+  \item Managing kickstart files for 2800+ machines and managing PXE servers using them
+  \item Implementing a security monitoring system based on auditd, rsyslog, and ELK stack
+  \item Developing process control and monitoring using Monit
+  \item Administration of ELK clusters
+  \item Development of Logalike (Logstash clone) extensions in Java
 \end{itemize}
 
 
@@ -243,15 +283,13 @@ $endfor$
 
 % Linux Polska
 \noindent\textbox{\textbf{\textsc{Linux Polska}}\hfill}\textbox{\hfil \emph{Solution Architect}\hfil}\textbox{\hfill 02/2014--03/2015}\\\\
-\textbf{Technology:} RHEL 6, CentOS 7, Jenkins, Bash, Python, Vagrant, Packer, Fedora Koji, Red Hat Satellite Server, Red Hat Enterprise Virtualization, GlusterFS, GitLab, Zabbix
+\textbf{\textit{Technologies:}} Jenkins, Bash, Python, Vagrant, Packer, GlusterFS, GitLab, Zabbix
 
-\vspace{5pt}
+\vspace{1pt}
 \begin{itemize}
-  \item \emph{\href{http://opensourceday.com/}{Open Source Day}}: Organization of the biggest Open Source event in Poland.
-\end{itemize}
-
-\begin{itemize}
-  \item \emph{EuroLinux Project}: Design and implementation of Automated Delivery Pipeline for building RPM packages (using bash scripts chained into Jenkins' jobs).
+  \setlength\itemsep{-0.2em}
+  \item \emph{\href{http://opensourceday.com/}{Open Source Day}}: Organization of the biggest Open Source event in Poland
+  \item \emph{EuroLinux Project}: Design and implementation of Automated Delivery Pipeline for building RPM packages (based on Jenkins and shell scripts)
 \end{itemize}
 
 
@@ -260,36 +298,18 @@ $endfor$
 
 % IMPAQ
 \noindent\textbox{\textbf{\textsc{IMPAQ Group}}\hfill}\textbox{\hfil \emph{Software / System Engineer}\hfil}\textbox{\hfill 11/2011--01/2014}\\\\
-\textbf{Technology:} RHEL/CentOS 6, Ubuntu Server, Oracle Database, MySQL, GlusterFS, OpenStack (KVM), Cloudera Hadoop, Chef, HAProxy, nginx, Jenkins, Apache Cassandra, Zabbix, syslog-ng, Jira
-%\textbf{Soft skills:} Business wiriting, Marketing and Pre-sales activities
+\textbf{\textit{Technologies:}} MySQL, GlusterFS, OpenStack (KVM), Chef, Jenkins, Cassandra, Zabbix
 
-\vspace{10pt}
+\vspace{1pt}
 \begin{itemize}
-  \item Support of RHEL/Oracle/Java telco applications for international cellular networks.
-  \item Installation of a OpenStack cluster integrated with a GlusterFS cluster (automated with Chef).
+  \setlength\itemsep{-0.2em}
+  \item Support of RHEL/Oracle/Java telco applications for international cellular networks
+  \item Installation of a OpenStack cluster integrated with a GlusterFS cluster (automated with Chef)
 \end{itemize}
 
-% \noindent\rule[0.5ex]{\linewidth}{1pt}
 
-% Outbox
-%\note{07/2011--10/2011}\textbf{\textsc{Outbox} (Warsaw)}\\
-%\emph{Junior Consultant}
-%\begin{itemize}
-%  \item Development of the CRM system based on Oracle PeopleSoft platform for Telekomunikacja Polska SA.
-%\end{itemize}
+% \vspace{3pt}
 
-%\noindent\rule[0.5ex]{\linewidth}{1pt}
 
-% ERSA
-%\note{04/2015--04/2016}\textbf{\textsc{49th ERSA Congress} (Lodz)}\\
-%\emph{Intern}\\
-%Work mostly as a member of IT support and a member of information helpdesk during the Congress.
-
-%\noindent\rule[0.5ex]{\linewidth}{1pt}
-
-% fedorapl.org
-%\note{04/2015--04/2016}\textbf{\textsc{fedorapl.org}}\\
-%\emph{Team member (Voluntary)}\\
-%Development of web portal actively supporting and providing forum, wiki and other facilities for Polish community of Fedora Linux users.
 
 \end{document}

@@ -12,54 +12,63 @@ name: Tomasz Klosinski
 address:
 - "Not valid"
 - "Anymore"
-phone:
-  - "+41 79 435 75 71"
-email: tomasz.klosinski@protonmail.ch
+phone: "+41 XYZ"
+email: XYZ
 # Insert URLs without http://
-linkedin: tklosinski
-gpg:
-  key: "E75959B0"
-  url: "http://pgp.mit.edu/pks/lookup?op=get&search=0x0F79558EE75959B0"
+linkedin: tomaszklosinski
+# gpg:
+#   key: "E75959B0"
+#   url: "http://pgp.mit.edu/pks/lookup?op=get&search=0x0F79558EE75959B0"
 
 # Sections
-intro:
-  "My main professional objective is to learn and develop skills, improve my craftsmanship, to build agile, reliable, scalable and automated infrastructure stacks. My core values are professionalism, continuous learning and team work. I believe that they are the cornerstone of any successful and sustainable organisation."
+# intro:
+#   ""
 
 skill:
-  - Linux
-  - Bash and Python scripting
-  - Ansible and Docker (Compose & Swarm)
-  - Elasticsearch, Logstash/Fluentd, Kibana
-  - Prometheus, Grafana
-  - Cassandra, Couchbase, Redis
-  - CircleCI, Jenkins
-  # - HashiCorp DevOps stack
-  # - OpenStack, Amazon Web Services
-  # - MySQL, PostgreSQL
-  # - Apache HTTPD, nginx, HAProxy
+  - Docker & Kubernetes
+  - Python Development
+  - Cloud Computing 
+  - Monitoring & Observability 
+  - Linux System Administration
+
 
 interests:
-- Open Source
+- Cloud-Native Infrastructure
+- Software Engineering
 - Automation & Configuration Management
-- Scalable Systems Design
-- Monitoring, Time-Series Metrics
-- Continuous Delivery
-- Cloud Computing, IT Infrastructure
-- Agile Methodologies
+- Continuous Delivery (CI/CD)
+- Open Source Solutions
 
 languages:
 - language: Polish
   proficiency: Native
+- language: Python
+  proficiency: Native
 - language: English
   proficiency: C1
 - language: German
-  proficiency: A2      
+  proficiency: B1
 
 experience:
-- years: "2018--Present"
+- years: "2019--Present"
+  employer: Move Digital AG
+  job: Senior DevOps Engineer
+  city: Zurich, Switzerland
+  description:
+    "At Nectar I worked on:
+- Upgrading and refactoring docker-based CI workflow (CircleCi v2)
+- Maintaining Docker images (Dockerfiles), Docker Compose stacks configuration & Docker Swarm clusters
+- Refactoing Docker Compose stack files to support multiple versions for multiple use-cases & environments
+- Automating deployments from Github via CircleCI building/testing via Docker Hub images repo to Docker Swarm dev/stage/prod clusters
+- Building ELK logging stack with Kibana dashboards
+- Building Prometheus-based monitoring and performance metrics collection and Grafana dashboards visualisations for Node apps, RabbitMQ, Elasticsearch, Redis
+- Manage Exoscale VMs, AWS services and physical servers in a local datacenter with Ansible using Infrastructure as a Code paradigm"
+
+
+- years: "2018--2019"
   employer: Nectar FInancial AG
   job: Senior DevOps Engineer
-  city: Altendorf SZ
+  city: Altendorf (SZ), Switzerland
   description:
     "At Nectar I worked on:
 - Upgrading and refactoring docker-based CI workflow (CircleCi v2)
@@ -73,7 +82,7 @@ experience:
 - years: "2016--2017"
   employer: Flynt Bank AG
   job: Senior DevOps Engineer
-  city: Zug
+  city: Zug, Switzerland
   description:
     "At Flynt I have worked on:
 - Building a logging and tracing/metrics collection system based on Elasticsearch/Fluentd/Kibana and Cassandra/KairosDB/Fluentd/Grafana and auditing system based on auditd.
@@ -86,7 +95,7 @@ experience:
 - years: "2015--2016"
   employer: CERN
   job: Project Associate
-  city: Geneva
+  city: Geneva, Switzerland
   description:
     "At CERN Control Center I have been working in the support team of over 2000 (OpenStack) VMs, desktops and servers.
     Most of the servers that I have been taking care of were Linux machines providing mission critical software
@@ -97,7 +106,7 @@ experience:
 - years: "2014–-2015"
   employer: Linux Polska
   job: Solution Architect
-  city: Warsaw
+  city: Warsaw, Poland
   description:
     "At Linux Polska I have worked on a continuous delivery system for building rpm packages.
     I have contributed also to the organization of the biggest Open Source event in Poland
@@ -106,7 +115,7 @@ experience:
 - years: "2011--2014"
   employer: IMPAQ
   job: Software / System Engineer
-  city: Warsaw
+  city: Warsaw, Poland
   description:
     "My career as a System Engineer at IMPAQ can be split into two periods.
     For first half year I have been member of a support team of RHEL-based telco applications for international cellular networks.
@@ -115,26 +124,26 @@ experience:
 - years: "2010--2011"
   employer: Outbox
   job: Junior Consultant
-  city: Warsaw
+  city: Warsaw, Poland
   description:
     "At Outbox I have worked on the development of the CRM system based on Oracle PeopleSoft platform for Telekomunikacja Polska SA."
 
 education:
 - year: "2010--2012"
-  subject: Databases
+  subject: Information Technology (Databases)
   degree: M.A.
   institute: Polish-Japanese Academy of Information Technology
-  city: Warsaw
+  city: Warsaw, Poland
 - year: "2008--2011"
   subject: Business Management
   degree: B.A.
   institute: University of Lodz
-  city: Lodz
+  city: Lodz, Poland
 - year: "2007--2010"
   subject: Computer Science
   degree: B.A.
   institute: University of Lodz
-  city: Lodz
+  city: Lodz, Poland
 
 cerification:
   - title: "Red Hat Certified Engineer"
